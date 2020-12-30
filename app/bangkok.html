@@ -249,29 +249,27 @@ subscribeSm: true
                     </ul>
                     <p class="mb-md-4 font-lg bold">Budget</p>
                     <ul class="nav flex-column mb-md-10">
-                        <li class="position-relative mb-lg-6">
-                            <div class="position-absolute radius_prepend"></div>
-                            <div class="range"></div>
-                            <div class="position-absolute radius_append"></div>
+                        <li>
+                            <div id="budget" class="budget"></div>
                         </li>
                         <li class="d-lg-flex justify-content-lg-around align-items-center d-none">
                             <div class="minPrice bg-white py-2 pl-2">
                                 <p class="font-sm bold mb-0">Min price</p>
-                                <p class="text-gray600 font-md mb-0">TWD 800</p>
+                                <p class="text-gray600 font-md mb-0">+TWD <span class="budget_value_L"></span></p>
                             </div>
                             <div class="maxPrice bg-white py-2 pl-2">
                                 <p class="font-sm bold mb-0">Max price</p>
-                                <p class="text-gray600 font-md mb-0">TWD 4,000+</p>
+                                <p class="text-gray600 font-md mb-0">+TWD <span class="budget_value_H"></span></p>
                             </div>
                         </li>
                         <li class="d-flex d-lg-none justify-content-between w-100 bg-white mt-6">
                             <div class="minPrice_pad py-2 w-50 text-center">
                                 <p class="font-sm bold mb-0">Min price</p>
-                                <p class="text-gray600 font-md mb-0">TWD 800</p>
+                                <p class="text-gray600 font-md mb-0"><span class="budget_value_L"></span></p>
                             </div>
                             <div class="py-2 w-50 text-center">
                                 <p class="font-sm bold mb-0">Max price</p>
-                                <p class="text-gray600 font-md mb-0 text-nowrap">TWD 4,000+</p>
+                                <p id="budget_value_H" class="text-gray600 font-md mb-0 text-nowrap"><span class="budget_value_H"></span></p>
                             </div>
                         </li>
                     </ul>

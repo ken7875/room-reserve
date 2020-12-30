@@ -103,6 +103,25 @@ $(document).ready(() => {
   $('#person_dropdown').on("click",function (e) {
     e.stopPropagation();
   })
-  
+
+  // bangkok range
+  $("#budget").slider({
+    min: 800,
+    max: 4000,
+    range: true,
+    values: [800, 4500],
+    create: function(e, ui) {
+      var handle={"width":"15px","height":"15px","text-align":"center","border-radius":"50%","background-color":"#6C51E2","transform":"translateY(-2px)","border":"1px solid #6C51E2"};
+      var bar ={"background-color":"#6C51E2"}
+      $(this).find(".ui-slider-range").css(bar);
+      $(this).find(".ui-slider-handle").css(handle);
+      },
+    slide: function(e, ui) {
+      var L=$("#budget").slider("values", 0);
+      var H=$("#budget").slider("values", 1);
+      $(".budget_value_L").html(L);
+      $(".budget_value_H").html(H);
+      }
+    });
 });
 

@@ -4,28 +4,9 @@
             font-size: 32px;
         }
     }    
-    .range{
-        border-bottom: 2px solid $primary;
-    }
-    .radius_prepend{
-        top: 0;
-        left: 0;
-        transform: translate(-50%, -42%);
-        background-color: $primary;
-        width: 12px;
-        height: 12px;
-        border: 1px solid $primary;
-        border-radius: 50%;
-    }
-    .radius_append{
-        top: 0;
-        right: 0;
-        transform: translate(50%, -42%);
-        background-color: $primary;
-        width: 12px;
-        height: 12px;
-        border: 1px solid $primary;
-        border-radius: 50%;
+    .budget{
+        height: 5px;
+        background-color: $gray-500;
     }
     .minPrice, .maxPrice{
         width: 40%;
