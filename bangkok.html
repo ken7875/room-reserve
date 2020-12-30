@@ -14,6 +14,7 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
   <!-- daterangepicker -->
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
@@ -300,29 +301,27 @@
                     </ul>
                     <p class="mb-md-4 font-lg bold">Budget</p>
                     <ul class="nav flex-column mb-md-10">
-                        <li class="position-relative mb-lg-6">
-                            <div class="position-absolute radius_prepend"></div>
-                            <div class="range"></div>
-                            <div class="position-absolute radius_append"></div>
+                        <li>
+                            <div id="budget" class="budget"></div>
                         </li>
                         <li class="d-lg-flex justify-content-lg-around align-items-center d-none">
                             <div class="minPrice bg-white py-2 pl-2">
                                 <p class="font-sm bold mb-0">Min price</p>
-                                <p class="text-gray600 font-md mb-0">TWD 800</p>
+                                <p class="text-gray600 font-md mb-0">+TWD <span class="budget_value_L"></span></p>
                             </div>
                             <div class="maxPrice bg-white py-2 pl-2">
                                 <p class="font-sm bold mb-0">Max price</p>
-                                <p class="text-gray600 font-md mb-0">TWD 4,000+</p>
+                                <p class="text-gray600 font-md mb-0">+TWD <span class="budget_value_H"></span></p>
                             </div>
                         </li>
                         <li class="d-flex d-lg-none justify-content-between w-100 bg-white mt-6">
                             <div class="minPrice_pad py-2 w-50 text-center">
                                 <p class="font-sm bold mb-0">Min price</p>
-                                <p class="text-gray600 font-md mb-0">TWD 800</p>
+                                <p class="text-gray600 font-md mb-0"><span class="budget_value_L"></span></p>
                             </div>
                             <div class="py-2 w-50 text-center">
                                 <p class="font-sm bold mb-0">Max price</p>
-                                <p class="text-gray600 font-md mb-0 text-nowrap">TWD 4,000+</p>
+                                <p id="budget_value_H" class="text-gray600 font-md mb-0 text-nowrap"><span class="budget_value_H"></span></p>
                             </div>
                         </li>
                     </ul>
@@ -1047,7 +1046,9 @@
   <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
   <!-- rangeSlider（CDN） --> 
   <script src="./assets/js/all.js"></script> 
