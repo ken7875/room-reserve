@@ -1,0 +1,355 @@
+---
+title: ALOHA
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+header: true
+footer: ture
+subscribeLg: true
+subscribeSm: false
+---
+
+<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="img">
+        <h2 class="carousel-word text-white d-inline-block text-center">Discover your ideal hotel</h2>
+      </div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="search col-10 offset-1 bg-gray py-6">
+      <div class="search-inner d-flex align-items-center flex-wrap flex-lg-nowrap">
+        <div class="dropdown bg-white  mb-4 mb-lg-0 rounded w-100 mr-4">
+          <a href="#" class="d-flex py-4" id="location" data-toggle="dropdown">
+            <span class="material-icons mx-4 text-dark">
+              location_on
+            </span>
+            <p class="mb-0 text-gray600">Destination</p>
+          </a>
+          <ul class="dropdown-menu bg-white w-100" aria-labelledby="location">
+            <li class="dropdown-item d-flex align-items-start">
+              <span class="material-icons mr-2">
+                grade
+              </span>
+              <div>
+                <span value="Bangkok">
+                  Bangkok
+                </span>
+                <p class="font-sm text-gray600 mb-0">Thailand</p>
+              </div>
+            </li>
+            <li class="dropdown-item d-flex align-items-start">
+              <span class="material-icons mr-2">
+                grade
+              </span>
+              <div>
+                <span value="Osaka">
+                  Osaka
+                </span>
+                <p class="font-sm text-gray600 mb-0">Japan</p>
+              </div>
+            </li>
+            <li class="dropdown-item d-flex align-items-start">
+              <span class="material-icons mr-2">
+                grade
+              </span>
+              <div>
+                <span value="Roma">
+                  Roma
+                </span>
+                <p class="font-sm text-gray600 mb-0">Italy</p>
+              </div>
+            </li>
+            <li class="dropdown-item d-flex align-items-start">
+              <span class="material-icons mr-2">
+                grade
+              </span>
+              <div>
+                <span value="Paris">
+                  Paris
+                </span>
+                <p class="font-sm text-gray600 mb-0">France</p>
+              </div>
+            </li>
+            <li class="dropdown-item d-flex align-items-start">
+              <span class="material-icons mr-2">
+                grade
+              </span>
+              <div>
+                <span value="Reykjavik">
+                  Reykjavik
+                </span>
+                <p class="font-sm text-gray600 mb-0">iceland</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <a href="#" class="dropdown mb-4 mb-lg-0 rounded w-100 mr-4">
+          <div class="d-flex bg-white py-4 " id="picker">
+            <span class="material-icons px-4 text-dark">
+              date_range
+            </span>
+            <p class="text-gray600 mb-0">Check-in / Check-out</p>
+          </div>
+        </a>
+        <div class="dropdown guest bg-white mb-4 mb-lg-0 rounded w-100 mr-4">
+          <a href="#" class="d-flex py-4" data-toggle="dropdown">
+            <span class="material-icons text-dark mx-4">
+              person
+            </span>
+            <p class="mb-0 text-gray600">Guest</p>
+          </a>
+          <ul class="dropdown-menu w-100" id="person_dropdown">
+            <li class="d-flex dropdown-item justify-content-between align-items-center">
+              <p class="mb-0">Adult</p>
+              <div class="d-flex">
+                <button class="minusRoom btn btn-white px-0">
+                  <span class="material-icons">
+                    remove
+                  </span>
+                </button>
+                <input type="text" class="roomQuantity form-control border-0 px-2" value="0">
+                <button class="addRoom btn btn-white px-0">
+                  <span class="material-icons">
+                    add
+                  </span>
+                </button>
+              </div>
+            </li>
+            <li class="d-flex dropdown-item justify-content-between align-items-center">
+              <p class="mb-0">Child</p>
+              <div class="d-flex">
+                <button class="minusRoom btn btn-white px-0">
+                  <span class="material-icons">
+                    remove
+                  </span>
+                </button>
+                <input type="text" class="roomQuantity form-control border-0 px-2" value="0">
+                <button class="addRoom btn btn-white px-0">
+                  <span class="material-icons">
+                    add
+                  </span>
+                </button>
+              </div>
+            </li>
+            <li class="d-flex dropdown-item justify-content-between align-items-center">
+              <p class="mb-0">Room</p>
+              <div class="d-flex">
+                <button class="btn btn-white px-0">
+                  <span class="minusRoom material-icons">
+                    remove
+                  </span>
+                </button>
+                <input type="text" class="roomQuantity form-control border-0 px-2" value="0">
+                <button class="addRoom btn btn-white px-0">
+                  <span class="material-icons">
+                    add
+                  </span>
+                </button>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <a href="bangkok.html" class="searchBtn btn px-8 py-4 bg-primary text-white rounded mb-6 mb-lg-0">SEARCH</a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container mb-13">
+  <h3>Top Choices</h3>
+  <ul class="city d-flex mb-7 list-unstyled">
+    <li class="px-5 active">
+      <a href="#" class=""><p class="font-xxl pt-5 mb-0">Bali128</p></a>        
+    </li>
+    <li class="px-5">
+      <a href="#" class="text-dark"><p class="font-xxl pt-5 mb-0">Okinawa67</p></a>
+    </li>
+    <li class="px-5">
+      <a href="#" class="text-dark"><p class="font-xxl pt-5 mb-0">Taipei53</p></a>
+    </li>      
+  </ul>
+  <div class="topChoice swiper-container">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <a href="#">
+            <div class="card border-0">
+              <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week8/top1.jpg?raw=true" class="card-img-top" alt="top-choice 1">
+              <div class="card-body px-0 py-2 py-2">
+                <p class="title mb-2 mt-2">Hotel Aqua</p>
+                <div class="star five"></div>
+                <span class="text-gray600 font-md">5.0</span><span class="text-gray600 font-sm">・2k reviews</span>
+                <p><span class="mr-2 text-gray600 font-md">TWD 2,480</span><del class="text-gray600 font-sm">TWD 3,980</del></p>
+              </div>
+          </a>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <a href="#">
+            <div class="card border-0">
+              <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week8/top2.jpg?raw=true" class="card-img-top" alt="top-choice 2">
+              <div class="card-body px-0 py-2">
+                <p class="title mt-2 mb-2">Mr. Kawasaki Inn</p>
+                <div class="star four"></div>
+                <span class="text-gray600 font-md">4.0</span><span class="text-gray600 font-sm">・500 reviews</span>
+                <p><span class="text-gray600 font-md">TWD 3,380</span></p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#">
+            <div class="card border-0">
+              <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week8/top3.jpg?raw=true" class="card-img-top" alt="top-choice 3">
+              <div class="card-body px-0 py-2">
+                <p class="title mt-2 mb-2">Weekly Paradise</p>
+                <div class="star four"></div>
+                <span class="text-gray600 font-md">4.0</span><span class="text-gray600 font-sm">・470 reviews</span>
+                <p><span class="text-gray600 font-md">TWD 4,780</span></p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#">
+            <div class="card border-0">
+              <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week8/top4.jpg?raw=true" class="card-img-top" alt="top-choice 4">
+              <div class="card-body px-0 py-2">
+                <p class="title mt-2 mb-2">Beast Hotel</p>
+                <div class="star four"></div>
+                <span class="text-gray600 font-md">4.0</span><span class="text-gray600 font-sm">・283 reviews</span>
+                <p><span class="text-gray600 font-md">TWD 1,980</span></p>
+              </div>
+            </div>
+          </a>
+        </div>
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+  
+    <!-- If we need navigation buttons -->
+    <div class="prev slideshow-navigation-button p-2">
+      <span class="material-icons">
+        keyboard_arrow_left
+      </span>
+    </div>
+    <div class="next slideshow-navigation-button p-2">
+      <span class="material-icons">
+        keyboard_arrow_right
+      </span>
+    </div>
+  </div>
+</div>
+
+<div class="container mb-13">
+  <div class="popularDestination row">
+    <h3 class="col-12">Top Choices</h3>
+    <div class="col-lg-4 col-md-6 mb-6">
+      <button class="Osaka btn w-100">
+        <p class="font-sm mb-0 text-white text-left">JAPAN</p>
+        <p class="text-white text-left font-xxl">
+          Osaka
+          <span class="material-icons">
+            keyboard_arrow_down
+          </span>
+        </p>
+      </button>
+    </div>
+    <div class="col-lg-4 col-md-6 mb-6">
+      <button class="Koyto btn w-100">
+        <p class="font-sm mb-0 text-white text-align-start text-left">JAPAN</p>
+        <p class="text-white text-left font-xxl">
+          Kyoto
+          <span class="material-icons">
+            keyboard_arrow_down
+          </span>
+        </p>
+      </button>
+    </div>
+    <div class="col-lg-4 col-md-6 mb-6">
+      <button class="Reykjavik btn w-100">
+        <p class="font-sm mb-0 text-white text-align-start text-left">iceland</p>
+        <p class="text-white text-left font-xxl">
+          Reykjavík
+          <span class="material-icons">
+            keyboard_arrow_down
+          </span>
+        </p>
+      </button>
+    </div>
+    <div class="col-lg-4 col-md-6 mb-6">
+      <button class="Paris btn w-100">
+        <p class="font-sm mb-0 text-white text-align-start text-left">France</p>
+        <p class="text-white text-left font-xxl">
+          Paris
+          <span class="material-icons">
+            keyboard_arrow_down
+          </span>
+        </p>
+      </button>
+    </div>
+    <div class="col-lg-4 col-md-6 mb-6 mb-md-0">
+      <button class="Roma btn w-100">
+        <p class="font-sm mb-0 text-white text-align-start text-left">Italy</p>
+        <p class="text-white text-left font-xxl">
+          Roma
+          <span class="material-icons">
+            keyboard_arrow_down
+          </span>
+        </p>
+      </button>
+    </div>
+    <div class="col-lg-4 col-md-6">
+      <button class="Bangkok btn w-100" onclick='location.href = "bangkok.html"'>
+        <p class="font-sm mb-0 text-white text-align-start text-left">Thailand</p>
+        <p class="text-white text-left font-xxl">
+          Bangkok
+          <span class="material-icons">
+            keyboard_arrow_down
+          </span>
+        </p>
+      </button>
+    </div>
+  </div>
+</div>
+<div class="inspiration container mb-13">
+  <div class="d-flex justify-content-between">
+    <h3 class="mb-6">Get Inspiration</h3>
+    <button class="btn btn-outline-primary px-4 py-2 h-100">SEE MORE</button>
+  </div>
+  <div class="row">
+    <div class="card col-md-4 border-0">
+      <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week8/italy.jpg?raw=true" class="card-img-top" alt="Italy">
+      <div class="card-body px-0 pl-0">
+        <h4>The fifth most visited country</h4>
+        <p class="card-text">Italy is the fifth most visited country in the world, with a total of 52.3 million…</p>
+      </div>
+    </div>
+    <div class="card col-md-4 border-0">
+      <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week8/Thailand.jpg?raw=true" class="card-img-top" alt="Thailand">
+      <div class="card-body px-0 px-0">
+        <h4>Visit Thailand for Bangkok</h4>
+        <p class="card-text">Asian tourists primarily visit Thailand for Bangkok and the historical, natural, and…</p>
+      </div>
+    </div>
+    <div class="card col-md-4 border-0">
+      <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week8/NewZealand.jpg?raw=true" class="card-img-top" alt="NewZealand">
+      <div class="card-body px-0 px-0">
+        <h4>Lord of the Rings Tour</h4>
+        <p class="card-text">The national cuisine has been described as Pacific Rim, incorporating the native Māori…</p>
+      </div>
+    </div>
+  </div>
+</div>

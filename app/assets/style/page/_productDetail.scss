@@ -1,0 +1,44 @@
+.productDetail{
+    .mainImg{
+        height: 434px;
+        @include pad(){
+            height: 268px;
+        }
+    }
+    .productName{
+        font-size: 32px;
+    }
+    .secImg{
+        height: 213px;
+        @include pad(){
+            height: 132px;
+        }
+    }
+    .moreImg{
+        height: 153px;
+        @include pad(){
+            height: 93px;
+        }
+    }
+}
+.mobileImg{
+    img{
+        height: 247px;
+        object-position: center;
+    }
+    .mobile_prev{
+        cursor: pointer;
+        z-index: 1000;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .mobile_next{
+        cursor: pointer;
+        z-index: 1000;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+    }
+}

@@ -1,0 +1,82 @@
+.topChoice{
+  overflow: visible;
+  @include pad(){
+    max-width: 720px;
+  }
+  @include mobile(){
+    max-width: 318.33px;
+  }
+  .slideshow {
+    position: relative;
+    &-navigation {
+      &-button {
+        cursor: pointer;
+        position: absolute;
+        top: 30%;
+        transform: translateY(-50%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+        transition: all .3s ease;
+        background-color: #F1F0F8;
+        color: #000000;
+        border-radius: 50%;
+        &.prev {
+          left: -25px;
+        }
+        &.next {
+          right: -25px;
+        }
+      }
+    }
+  }
+}
+.city li{
+    border-bottom: 2px solid $gray;
+    color: gray;
+}
+.city .active{
+    color: $primary;
+    border-bottom: 2px solid $primary;
+}
+.Osaka{
+    background-image: url('https://github.com/hexschool/webLayoutTraining1st/blob/master/week8/Osaka.jpg?raw=true');
+    background-position: center center;
+    background-size: cover;
+}
+.Koyto{
+    background-image: url('https://github.com/hexschool/webLayoutTraining1st/blob/master/week8/Kyoto.jpg?raw=true');
+    background-position: center center;
+    background-size: cover;
+}
+.Reykjavik{
+    background-image: url('https://github.com/hexschool/webLayoutTraining1st/blob/master/week8/Reykjavic.jpg?raw=true');
+    background-position: center center;
+    background-size: cover;
+}
+.Paris{
+    background-image: url('https://github.com/hexschool/webLayoutTraining1st/blob/master/week8/Paris.jpg?raw=true');
+    background-position: center center;
+    background-size: cover;
+}
+.Roma{
+    background-image: url('https://github.com/hexschool/webLayoutTraining1st/blob/master/week8/Roman.jpg?raw=true');
+    background-position: center center;
+    background-size: cover;
+}
+.Bangkok{
+    background-image: url('https://github.com/hexschool/webLayoutTraining1st/blob/master/week8/Bangkok.jpg?raw=true');
+    background-position: center center;
+    background-size: cover;
+}
+
+.popularDestination{
+    button{
+        position: relative;
+        span{
+            position: absolute;
+            right: 20px;
+        }
+    }  
+}

@@ -1,0 +1,12 @@
+.received{
+    h2{
+        font-size: 32px;
+    }
+    .btnGroup{
+        button{
+            @include mobile(){
+                width: 100%;
+            }
+        }
+    }
+}

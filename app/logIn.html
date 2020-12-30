@@ -1,0 +1,78 @@
+---
+title: Bangkok
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+header: false
+footer: false
+subscribeLg: false
+subscribeSm: false
+---
+
+<div class="container fixed-top d-flex align-items-center justify-content-between">
+    <div class="logo">
+        <h1 class="py-6">
+            <a href="index.html">ALOHA</a>
+        </h1>
+    </div>
+    <span class="material-icons d-block d-md-none mb-2">
+        clear
+    </span>
+</div>
+<div class="logIn h-100">
+    <div class="row no-gutters">
+        <div class="h-100 col-lg-7 w-100 d-none d-md-block img"
+            style="background-image: url('https://github.com/hexschool/webLayoutTraining1st/blob/master/week8/login.jpg?raw=true'); position: fixed;">
+        </div>
+    </div>
+    <div class="content position-relative w-100 h-100">
+        <div class="container h-100">
+            <div class="row">
+                <div class="col-lg-6 d-lg-block d-none">
+                    <h2 class="bold">An ideal hotel makes a wonderful Trip.</h2>
+                    <p class="text-gray600 font-md">Discover your dream destination and hotel on ALOHA.com</p>
+                </div>
+                <div class="col-lg-4 offset-lg-2 col-md-6 offset-md-3">
+                    <h3 class="bold">Login</h3>
+                    <div class="row">
+                        <div class="col-12 mb-4">
+                            <label for="email" class="text-gray600">email</label>
+                            <input type="email" class="form-control py-7" id="email">
+                        </div>
+                        <div class="col-12 mb-md-6">
+                            <label for="password" class="text-gray600">password</label>
+                            <input type="text" class="form-control py-7" id="password">
+                        </div>
+                        <p class="col-12 text-gray600 font-sm mb-md-4">
+                            By signing in or creating an account, you agree with our <a href="#" class="text-primary">Terms</a> & <a href="#" class="text-primary">Conditions</a> and <a href="#" class="text-primary">Privacy Statement</a>
+                        </p>
+                        <div class="col-12 mb-md-8">
+                            <div class="checkbox">
+                                <input type="checkbox" id="checkbox">
+                                <label for="checkbox">Remember me</label>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <button class="btn btn-primary text-light w-100 py-4 mb-2">
+                                LOGIN
+                            </button>
+                        </div>
+                        <p class="col-12 text-gray600 text-center">Don’t have an account yet? <a href="#" class="text-primary">Sign up</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="position position-absolute mb-6 d-none d-lg-block">
+                <div class="bg-dark px-4 d-inline-block py-2 rounded">
+                    <div class="text-light mb-0 d-flex align-items-center">
+                        <span class="material-icons pl-3 pr-2">
+                            location_on
+                        </span>
+                        <p class="mb-0">
+                            Osaka Castel, Japan
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

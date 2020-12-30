@@ -1,0 +1,28 @@
+html, body{
+    height: 100%;
+};
+body{
+    overflow-x: hidden;
+    font-family: 'Open Sans', sans-serif;
+}
+img{
+    object-fit: cover;
+    display:block;
+}
+.img{
+    background-size: cover;
+    background-position: center center;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+    color: #000000;
+}
+
+li{
+    list-style: none;
+}
+
+.active{
+    color: $primary;
+}

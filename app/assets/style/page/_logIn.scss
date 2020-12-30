@@ -1,0 +1,12 @@
+.logIn{
+    .content{
+        padding-top: 152px;
+        @include pad(){
+            padding-top: 72px;
+        }
+        .position{
+            bottom: 0;
+        }
+    }
+    
+}

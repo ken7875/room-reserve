@@ -1,0 +1,924 @@
+---
+title: Bangkok
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+header: true
+footer: true
+subscribeLg: false
+subscribeSm: true
+---
+
+<div class="bangkok">
+    <div class="w-100 search bg-gray py-6 d-none d-md-block">
+        <div class="container">
+            <div class="search-inner d-flex align-items-center">
+                <div class="dropdown bg-white rounded w-100 mr-4">
+                    <a href="#" class="d-flex text-dark  align-items-center" id="location" data-toggle="dropdown">
+                        <span class="material-icons py-4 mx-lg-4 mx-2">
+                            location_on
+                        </span>
+                        <div>
+                            <p class="mb-0 bold font-sm">Destination</p>
+                            <p class="mb-0 font-md text-gray600">Bangkok, Thailand</p>
+                        </div>
+                    </a>
+                    <ul class="dropdown-menu w-100" aria-labelledby="location">
+                        <li class="dropdown-item d-flex align-items-start">
+                            <span class="material-icons mr-2">
+                                grade
+                            </span>
+                            <div>
+                                <span value="Bangkok">
+                                    Bangkok
+                                </span>
+                                <p class="font-sm text-gray600 mb-0">Thailand</p>
+                            </div>
+                        </li>
+                        <li class="dropdown-item d-flex align-items-start">
+                            <span class="material-icons mr-2">
+                                grade
+                            </span>
+                            <div>
+                                <span value="Osaka">
+                                    Osaka
+                                </span>
+                                <p class="font-sm text-gray600 mb-0">Japan</p>
+                            </div>
+                        </li>
+                        <li class="dropdown-item d-flex align-items-start">
+                            <span class="material-icons mr-2">
+                                grade
+                            </span>
+                            <div>
+                                <span value="Roma">
+                                    Roma
+                                </span>
+                                <p class="font-sm text-gray600 mb-0">Italy</p>
+                            </div>
+                        </li>
+                        <li class="dropdown-item d-flex align-items-start">
+                            <span class="material-icons mr-2">
+                                grade
+                            </span>
+                            <div>
+                                <span value="Paris">
+                                    Paris
+                                </span>
+                                <p class="font-sm text-gray600 mb-0">France</p>
+                            </div>
+                        </li>
+                        <li class="dropdown-item d-flex align-items-start">
+                            <span class="material-icons mr-2">
+                                grade
+                            </span>
+                            <div>
+                                <span value="Reykjavik">
+                                    Reykjavik
+                                </span>
+                                <p class="font-sm text-gray600 mb-0">iceland</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <a href="#" class="dropdown text-dark w-100 mr-4">
+                    <div class="d-flex bg-white align-items-center rounded" id="picker">
+                        <span class="material-icons py-4 text-dark mx-lg-4 mx-2">
+                            date_range
+                        </span>
+                        <div class="checkIn border-right d-none d-lg-block">
+                            <p class="font-sm bold mb-0">Check-in</p>
+                            <p class="font-md text-gray600 mb-0">17 June</p>
+                        </div>
+                        <div class="ml-4 d-none d-lg-block">
+                            <p class="font-sm bold mb-0">Check-out</p>
+                            <p class="font-md text-gray600 mb-0">19 June</p>
+                        </div>
+                        <div class="d-block d-lg-none">
+                            <p class="bold font-sm mb-0">Check-in / out</p>
+                            <p class="text-gray600 font-md mb-0">17 June - 19 June</p>
+                        </div>
+                    </div>
+                </a>
+                <div class="dropdown guest bg-white rounded w-100 mr-4">
+                    <a href="#" class="d-flex text-dark align-items-center" data-toggle="dropdown">
+                        <span class="material-icons mx-lg-4 py-4 mx-2">
+                            person
+                        </span>
+                        <div>
+                            <p class="mb-0 bold font-sm">Guest</p>
+                            <p class="text-gray600 font-md mb-0">2 adults・1 room</p>
+                        </div>
+                    </a>
+                    <ul class="dropdown-menu w-100" id="person_dropdown">
+                        <li class="d-flex dropdown-item justify-content-between align-items-center">
+                            <p class="mb-0">Adult</p>
+                            <div class="d-flex">
+                                <button class="minusRoom btn btn-white px-0">
+                                    <span class="material-icons">
+                                        remove
+                                    </span>
+                                </button>
+                                <input type="text" class="roomQuantity form-control border-0 px-2" value="0">
+                                <button class="addRoom btn btn-white px-0">
+                                    <span class="material-icons">
+                                        add
+                                    </span>
+                                </button>
+                            </div>
+                        </li>
+                        <li class="d-flex dropdown-item justify-content-between align-items-center">
+                            <p class="mb-0">Child</p>
+                            <div class="d-flex">
+                                <button class="minusRoom btn btn-white px-0">
+                                    <span class="material-icons">
+                                        remove
+                                    </span>
+                                </button>
+                                <input type="text" class="roomQuantity form-control border-0 px-2" value="0">
+                                <button class="addRoom btn btn-white px-0">
+                                    <span class="material-icons">
+                                        add
+                                    </span>
+                                </button>
+                            </div>
+                        </li>
+                        <li class="d-flex dropdown-item justify-content-between align-items-center">
+                            <p class="mb-0">Room</p>
+                            <div class="d-flex">
+                                <button class="btn btn-white px-0">
+                                    <span class="minusRoom material-icons">
+                                        remove
+                                    </span>
+                                </button>
+                                <input type="text" class="roomQuantity form-control border-0 px-2" value="0">
+                                <button class="addRoom btn btn-white px-0">
+                                    <span class="material-icons">
+                                        add
+                                    </span>
+                                </button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <a href="#" class="btn px-8 py-4 bg-primary text-white bold rounded">SEARCH</a>
+            </div>
+        </div>
+    </div>
+    <div class="container mb-md-6">
+        <div class="row align-items-center">
+            <h2 class="title col-md-3 position-relative text-center">
+                Bankok
+                <span class="font-xl text-primary position-absolute">3240</span>
+            </h2>
+            <ul
+                class="menu offset-lg-2 offset-md-1 col-lg-7 col-md-8 d-md-flex justify-content-between text-nowrap d-none">
+                <li class="text-primary mr-md-6 mr-lg-0">Recommended</li>
+                <li class="mr-md-6 mr-lg-0">Lowest Price</li>
+                <li class="mr-md-6 mr-lg-0">Best value</li>
+                <li class="mr-md-6 mr-lg-0">Distance to City Center</li>
+            </ul>
+        </div>
+        <!-- mobile_search -->
+        <div class="d-flex d-md-none justify-content-around mt-6">
+            <a href="#" class="d-flex align-items-center text-dark mb-4 bold">
+                <span class="material-icons mr-2">
+                    filter_list
+                </span>
+                <span class="font-md">FILTER</span>
+            </a>
+            <a href="#" class="d-flex align-items-center text-dark mb-4 bold">
+                <span class="material-icons mr-2">
+                    sort
+                </span>
+                <span class="font-md">SORT</span>
+            </a>
+        </div>
+        <!-- mobile_search -->
+    </div>
+    <div class="container">
+        <div class="row">
+            <aside class="col-md-4 d-md-block d-none">
+                <div class="form rounded-lg bg-gray px-8 py-8">
+                    <p class="mb-md-4 font-lg bold">Deals</p>
+                    <ul class="nav flex-column mb-md-10">
+                        <li>
+                            <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                                <input type="checkbox" class="custom-control-input" id="Free cancellation">
+                                <label class="custom-control-label text-gray600" for="Free cancellation">Free
+                                    cancellation</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                                <input type="checkbox" class="custom-control-input" id="No prepayment">
+                                <label class="custom-control-label text-gray600" for="No prepayment">No
+                                    prepayment</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                                <input type="checkbox" class="custom-control-input" id="Special offers">
+                                <label class="custom-control-label text-gray600" for="Special offers">Special
+                                    offers</label>
+                            </div>
+                        </li>
+                    </ul>
+                    <p class="mb-md-4 font-lg bold">Popular filter</p>
+                    <ul class="nav flex-column mb-md-10">
+                        <li>
+                            <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                                <input type="checkbox" class="custom-control-input" id="Breakfast included">
+                                <label class="custom-control-label text-gray600" for="Breakfast included">Breakfast
+                                    included</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                                <input type="checkbox" class="custom-control-input" id="Free Wi-Fi">
+                                <label class="custom-control-label text-gray600" for="Free Wi-Fi">Free Wi-Fi</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                                <input type="checkbox" class="custom-control-input" id="Swimming pool">
+                                <label class="custom-control-label text-gray600" for="Swimming pool">Swimming
+                                    pool</label>
+                            </div>
+                        </li>
+                    </ul>
+                    <p class="mb-md-4 font-lg bold">Budget</p>
+                    <ul class="nav flex-column mb-md-10">
+                        <li class="position-relative mb-lg-6">
+                            <div class="position-absolute radius_prepend"></div>
+                            <div class="range"></div>
+                            <div class="position-absolute radius_append"></div>
+                        </li>
+                        <li class="d-lg-flex justify-content-lg-around align-items-center d-none">
+                            <div class="minPrice bg-white py-2 pl-2">
+                                <p class="font-sm bold mb-0">Min price</p>
+                                <p class="text-gray600 font-md mb-0">TWD 800</p>
+                            </div>
+                            <div class="maxPrice bg-white py-2 pl-2">
+                                <p class="font-sm bold mb-0">Max price</p>
+                                <p class="text-gray600 font-md mb-0">TWD 4,000+</p>
+                            </div>
+                        </li>
+                        <li class="d-flex d-lg-none justify-content-between w-100 bg-white mt-6">
+                            <div class="minPrice_pad py-2 w-50 text-center">
+                                <p class="font-sm bold mb-0">Min price</p>
+                                <p class="text-gray600 font-md mb-0">TWD 800</p>
+                            </div>
+                            <div class="py-2 w-50 text-center">
+                                <p class="font-sm bold mb-0">Max price</p>
+                                <p class="text-gray600 font-md mb-0 text-nowrap">TWD 4,000+</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <p class="mb-md-4 font-lg bold">rating</p>
+                    <ul class="nav rating flex-column mb-md-10">
+                        <li class="nav-item">
+                            <div class="custom-control custom-checkbox my-1 mr-sm-2 ">
+                                <input type="checkbox" class="custom-control-input " id="fiveStar">
+                                <label class="custom-control-label text-gray600 d-flex" for="fiveStar">
+                                    <div class="star five"></div><span class="text-gray600 ml-2">5.0<span>
+                                </label>
+
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                                <input type="checkbox" class="custom-control-input" id="fourStar">
+                                <label class="custom-control-label text-gray600 d-flex" for="fourStar">
+                                    <div class="star four"></div><span class="text-gray600 ml-2">4.0</span>
+                                </label>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                                <input type="checkbox" class="custom-control-input" id="threeStar">
+                                <label class="custom-control-label text-gray600 d-flex" for="threeStar">
+                                    <div class="star three"></div><span class="text-gray600 ml-2">3.0</span>
+                                </label>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                                <input type="checkbox" class="custom-control-input" id="twoStar">
+                                <label class="custom-control-label text-gray600 d-flex" for="twoStar">
+                                    <div class="star two"></div><span class="text-gray600 ml-2">2.0</span>
+                                </label>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                                <input type="checkbox" class="custom-control-input" id="oneStar">
+                                <label class="custom-control-label text-gray600 d-flex" for="oneStar">
+                                    <div class="star one"></div><span class="text-gray600 ml-2">1.0</span>
+                                </label>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <div class="custom-control custom-checkbox my-1 mr-sm-2 d-flex">
+                                <input type="checkbox" class="custom-control-input" id="Unrated">
+                                <label class="custom-control-label text-gray600" for="Unrated">Unrated</label>
+                            </div>
+                        </li>
+                    </ul>
+                    <p class="mb-md-4 font-lg bold">Stay type</p>
+                    <ul class="nav flex-column mb-md-10">
+                        <li class="nav-item text-gray600">
+                            <div class="custom-control custom-checkbox my-1 mr-sm-2 d-flex">
+                                <input type="checkbox" class="custom-control-input" id="Hotel">
+                                <label class="custom-control-label text-gray600" for="Hotel">Hotel</label>
+                            </div>
+                        </li>
+                        <li class="nav-item text-gray600">
+                            <div class="custom-control custom-checkbox my-1 mr-sm-2 d-flex">
+                                <input type="checkbox" class="custom-control-input" id="Apartment">
+                                <label class="custom-control-label text-gray600" for="Apartment">Apartment</label>
+                            </div>
+                        </li>
+                        <li class="nav-item text-gray600">
+                            <div class="custom-control custom-checkbox my-1 mr-sm-2 d-flex">
+                                <input type="checkbox" class="custom-control-input" id="Unique">
+                                <label class="custom-control-label text-gray600" for="Unique">Unique</label>
+                            </div>
+                        </li>
+                        <li class="nav-item text-gray600">
+                            <div class="custom-control custom-checkbox my-1 mr-sm-2 d-flex">
+                                <input type="checkbox" class="custom-control-input" id="Hostel">
+                                <label class="custom-control-label text-gray600" for="Hostel">Hostel</label>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+            <section class="col-md-8 col-12">
+                <ul class="list-unstyled mb-10">
+                    <li class="row">
+                        <div class="card col-12 flex-row">
+                            <div class="col-md-4 col-5 px-0">
+                                <a href="productDetail.html">
+                                    <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week8/Rachada1.jpg?raw=true"
+                                        alt="room1" class="w-100">
+                                </a>
+                            </div>
+                            <div class="col-md-8 col-7">
+                                <div class="d-flex justify-content-between pt-lg-4 pt-md-2">
+                                    <div>
+                                        <p class="text-gray600 font-sm mb-0">Rachada, Bangkok<span
+                                                class="text-primary d-none d-lg-inline">・2 km from center</span></p>
+                                        <h3 class="productName bold font-xxl mb-0 mb-lg-4">Rachada Hotel</h3>
+                                        <!-- rate-mobile start-->
+                                        <div class="rate d-md-none d-flex mb-1">
+                                            <div class="star four mr-2"></div>
+                                            <p class="font-md text-right mb-0">4.0 (283)</p>
+                                        </div>
+                                        <!-- rate-mobile end-->
+                                    </div>
+                                    <!-- rate-pad start-->
+                                    <div class="rate d-lg-flex d-md-block d-none">
+                                        <div class="star four mr-lg-2"></div>
+                                        <p class="font-md text-right mb-0">4.0 (283)</p>
+                                    </div>
+                                    <!-- rate-pad end-->
+                                </div>
+                                <div class="d-flex justify-content-between align-items-end">
+                                    <div>
+                                        <p class="font-md bold mb-lg-1 mb-md-2 mb-0">Deluxe Double Room</p>
+                                        <p class="font-sm text-gray600 mb-lg-5 mb-md-2 mb-0">2 guests・1 bed (Queen size)</p>
+                                        <div class="deposit d-lg-flex d-block">
+                                            <div class="d-none d-md-block d-lg-flex">
+                                                <p class="bg-gray font-sm text-gray600 px-2 py-lg-1 mr-lg-2
+                                                mr-0 rounded-lg mb-2 mb-lg-0 d-md-inline-block">Free cancellation</p>
+                                                <p
+                                                    class="bg-gray font-sm text-gray600 px-2 py-lg-1 rounded-lg mb-0 d-md-inline-block">
+                                                    No prepayment</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-none d-md-block">
+                                        <p class="font-sm text-gray600 mb-0 text-right bold">per night</p>
+                                        <p class="price font-xxl bold mb-0 text-nowrap raleWay">TWD 1,980</p>
+                                    </div>
+                                </div>
+                                <!-- mobile_price start-->
+                                <div class="d-block d-md-none pt-6">
+                                    <p class="bold text-right raleWay mb-0">TWD 1,980</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <div class="border-bottom my-6 d-none d-md-block"></div>
+                    <li class="row">
+                        <div class="card col-12 flex-row">
+                            <div class="col-md-4 col-5 px-0">
+                                <a href="#">
+                                    <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week8/Phaya.jpg?raw=true"
+                                        alt="room2" class="w-100">
+                                </a>
+                            </div>
+                            <div class="col-md-8 col-7">
+                                <div class="d-flex justify-content-between pt-lg-4 pt-md-2">
+                                    <div>
+                                        <p class="text-gray600 font-sm mb-0">Phaya Thai, Bangkok<span
+                                                class="text-primary d-none d-lg-inline">・2.9 km from center</span></p>
+                                        <h3 class="productName bold font-xxl mb-0 mb-lg-4">Forever Place</h3>
+                                        <!-- rate-mobile start-->
+                                        <div class="rate d-md-none d-flex mb-1">
+                                            <div class="star five mr-2"></div>
+                                            <p class="font-md text-right mb-0">5.0 (121)</p>
+                                        </div>
+                                        <!-- rate-mobile end-->
+                                    </div>
+                                    <!-- rate-pad start-->
+                                    <div class="rate d-lg-flex d-md-block d-none">
+                                        <div class="star five mr-lg-2"></div>
+                                        <p class="font-md text-right mb-0">5.0 (121)</p>
+                                    </div>
+                                    <!-- rate-pad end-->
+                                </div>
+                                <div class="d-flex justify-content-between align-items-end">
+                                    <div>
+                                        <p class="font-md bold mb-lg-1 mb-md-2 mb-0">Standard Double Room</p>
+                                        <p class="font-sm text-gray600 mb-lg-5 mb-md-2 mb-0">2 guests・1 bed (Queen size)</p>
+                                        <div class="deposit d-lg-flex d-block">
+                                            <div class="d-none d-md-block d-lg-flex">
+                                                <p class="bg-gray font-sm text-gray600 px-2 py-lg-1 rounded-lg mb-2 mb-lg-0 d-md-inline-block">Free cancellation</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-none d-md-block">
+                                        <p class="font-sm text-gray600 mb-0 text-right bold">per night</p>
+                                        <p class="price text-gray600 bold mb-0 text-nowrap raleWay text-right"><del>TWD 1,980</del></p>
+                                        <p class="price font-xxl bold mb-0 text-nowrap raleWay">TWD <span class="text-primary">1,680</span></p>
+                                    </div>
+                                </div>
+                                <!-- mobile_price start-->
+                                <div class="d-block d-md-none">
+                                    <p class="price text-gray600 bold raleWay text-right mb-0"><del class="font-sm">TWD 1,980</del></p>
+                                    <p class="price bold mb-0 text-nowrap raleWay text-right">TWD <span class="text-primary">1,680</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <div class="border-bottom my-6 d-none d-md-block"></div>
+                    <li class="row">
+                        <div class="card col-12 flex-row">
+                            <div class="col-md-4 col-5 px-0">
+                                <a href="#">
+                                    <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week8/Bangkapi.jpg?raw=true"
+                                        alt="room3" class="w-100">
+                                </a>
+                            </div>
+                            <div class="col-md-8 col-7">
+                                <div class="d-flex justify-content-between pt-lg-4 pt-md-2">
+                                    <div>
+                                        <p class="text-gray600 font-sm mb-0">Bangkapi, Bangkok<span
+                                                class="text-primary d-none d-lg-inline">・14 km from center</span></p>
+                                        <h3 class="productName bold font-xxl mb-0 mb-lg-4">LUV Hotel</h3>
+                                        <!-- rate-mobile start-->
+                                        <div class="rate d-md-none d-flex mb-1">
+                                            <div class="star four mr-2"></div>
+                                            <p class="font-md text-right mb-0">4.0 (325)</p>
+                                        </div>
+                                        <!-- rate-mobile end-->
+                                    </div>
+                                    <!-- rate-pad start-->
+                                    <div class="rate d-lg-flex d-md-block d-none">
+                                        <div class="star four mr-lg-2"></div>
+                                        <p class="font-md text-right mb-0">4.0 (325)</p>
+                                    </div>
+                                    <!-- rate-pad end-->
+                                </div>
+                                <div class="d-flex justify-content-between align-items-end">
+                                    <div>
+                                        <p class="font-md bold mb-lg-1 mb-md-2 mb-0">Standard Double Room</p>
+                                        <p class="font-sm text-gray600 mb-lg-5 mb-md-2 mb-0">2 guests・1 bed (Queen size)</p>
+                                        <div class="d-none d-md-block d-lg-flex">
+                                            <p class="bg-gray font-sm text-gray600 px-2 py-lg-1 rounded-lg mb-2 mb-lg-0 d-md-inline-block">Free cancellation</p>
+                                        </div>
+                                    </div>
+                                    <div class="d-none d-md-block">
+                                        <p class="font-sm text-gray600 mb-0 text-right bold">per night</p>
+                                        <p class="price font-xxl bold mb-0 text-nowrap raleWay">TWD 2,460</p>
+                                    </div>
+                                </div>
+                                <!-- mobile_price start-->
+                                <div class="d-block d-md-none pt-6">
+                                    <p class="bold text-right raleWay mb-0">TWD 2,460</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <div class="border-bottom my-6 d-none d-md-block"></div>
+                    <li class="row">
+                        <div class="card col-12 flex-row">
+                            <div class="col-md-4 col-5 px-0">
+                                <a href="#">
+                                    <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week8/Chatuchack1.jpg?raw=true"
+                                        alt="room4" class="w-100">
+                                </a>
+                            </div>
+                            <div class="col-md-8 col-7">
+                                <div class="d-flex justify-content-between pt-lg-4 pt-md-2">
+                                    <div>
+                                        <p class="text-gray600 font-sm mb-0">Chatuchack, Bangkok<span
+                                                class="text-primary d-none d-lg-inline">・12 km from center</span>
+                                        </p>
+                                        <h3 class="productName bold font-xxl mb-0 mb-lg-4">WOW Life Hotel</h3>
+                                        <!-- rate-mobile start-->
+                                        <div class="rate d-md-none d-flex mb-1">
+                                            <div class="star four mr-2"></div>
+                                            <p class="font-md text-right mb-0">4.0 (204)</p>
+                                        </div>
+                                        <!-- rate-mobile end-->
+                                    </div>
+                                    <!-- rate-pad start-->
+                                    <div class="rate d-lg-flex d-md-block d-none">
+                                        <div class="star four mr-lg-2"></div>
+                                        <p class="font-md text-right mb-0">4.0 (204)</p>
+                                    </div>
+                                    <!-- rate-pad end-->
+                                </div>
+                                <div class="d-flex justify-content-between align-items-end">
+                                    <div>
+                                        <p class="font-md bold mb-lg-1 mb-md-2 mb-0">Standard Double Room</p>
+                                        <p class="font-sm text-gray600 mb-lg-5 mb-md-2 mb-0">2 guests・1 bed (Queen size)</p>
+                                        <div class="deposit d-lg-flex d-block">
+                                            <div class="d-none d-md-block d-lg-flex">
+                                                <p class="bg-gray font-sm text-gray600 px-2 py-lg-1 rounded-lg mb-2 mb-lg-0 d-md-inline-block">No prepayment</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-none d-md-block">
+                                        <p class="font-sm text-gray600 mb-0 text-right bold">per night</p>
+                                        <p class="price text-gray600 bold mb-0 text-nowrap raleWay text-right"><del>TWD 2,880</del></p>
+                                        <p class="price font-xxl bold mb-0 text-nowrap raleWay">TWD <span class="text-primary">2,240</span></p>
+                                    </div>
+                                </div>
+                                <!-- mobile_price start-->
+                                <div class="d-block d-md-none">
+                                    <p class="price text-gray600 bold raleWay text-right mb-0"><del class="font-sm">TWD 1,980</del></p>
+                                    <p class="price bold mb-0 text-nowrap raleWay text-right">TWD <span class="text-primary">1,680</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <div class="border-bottom my-6 d-none d-md-block"></div>
+                    <li class="row">
+                        <div class="card col-12 flex-row">
+                            <div class="col-md-4 col-5 px-0">
+                                <a href="#">
+                                    <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week8/Chatuchack2.jpg?raw=true"
+                                        alt="room5" class="w-100">
+                                </a>
+                            </div>
+                            <div class="col-md-8 col-7">
+                                <div class="d-flex justify-content-between pt-lg-4 pt-md-2">
+                                    <div>
+                                        <p class="text-gray600 font-sm mb-0">Chatuchack, Bangkok<span
+                                                class="text-primary d-none d-lg-inline">・8 km from center</span>
+                                        </p>
+                                        <h3 class="productName bold font-xxl mb-0 mb-lg-4">Celebrity Palace</h3>
+                                        <!-- rate-mobile start-->
+                                        <div class="rate d-md-none d-flex mb-1">
+                                            <div class="star five mr-2"></div>
+                                            <p class="font-md text-right mb-0">5.0 (189)</p>
+                                        </div>
+                                        <!-- rate-mobile end-->
+                                    </div>
+                                    <!-- rate-pad start-->
+                                    <div class="rate d-lg-flex d-md-block d-none">
+                                        <div class="star five mr-lg-2"></div>
+                                        <p class="font-md text-right mb-0">5.0 (189)</p>
+                                    </div>
+                                    <!-- rate-pad end-->
+                                </div>
+                                <div class="d-flex justify-content-between align-items-end">
+                                    <div>
+                                        <p class="font-md bold mb-lg-1 mb-md-2 mb-0">Standard Double Room</p>
+                                        <p class="font-sm text-gray600 mb-lg-5 mb-md-2 mb-0">2 guests・1 bed (Queen size)</p>
+                                        <div class="deposit d-lg-flex d-block">
+                                            <div class="d-none d-md-block d-lg-flex">
+                                                <p class="bg-gray font-sm text-gray600 px-2 py-lg-1 rounded-lg mb-2 mb-lg-0 d-md-inline-block">No prepayment</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-none d-md-block">
+                                        <p class="font-sm text-gray600 mb-0 text-right bold">per night</p>
+                                        <p class="price text-gray600 bold mb-0 text-nowrap raleWay text-right"><del>TWD 2,120</del></p>
+                                        <p class="price font-xxl bold mb-0 text-nowrap raleWay">TWD <span class="text-primary">1,890</span></p>
+                                    </div>
+                                </div>
+                                <!-- mobile_price start-->
+                                <div class="d-block d-md-none">
+                                    <p class="price text-gray600 bold raleWay text-right mb-0"><del class="font-sm">TWD 2,120</del></p>
+                                    <p class="price bold mb-0 text-nowrap raleWay text-right">TWD <span class="text-primary">1,890</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <div class="border-bottom my-6 d-none d-md-block"></div>
+                    <li class="row">
+                        <div class="card col-12 flex-row">
+                            <div class="col-md-4 col-5 px-0">
+                                <a href="#">
+                                    <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week8/RangRak.jpg?raw=true"
+                                        alt="room6" class="w-100">
+                                </a>
+                            </div>
+                            <div class="col-md-8 col-7">
+                                <div class="d-flex justify-content-between pt-lg-4 pt-md-2">
+                                    <div>
+                                        <p class="text-gray600 font-sm mb-0">Rang Rak, Bangkok<span
+                                                class="text-primary d-none d-lg-inline">・4.4 km from center</span></p>
+                                        <h3 class="productName bold font-xxl mb-0 mb-lg-4">RR Space</h3>
+                                        <!-- rate-mobile start-->
+                                        <div class="rate d-md-none d-flex mb-1">
+                                            <div class="star four mr-2"></div>
+                                            <p class="font-md text-right mb-0">4.0 (112)</p>
+                                        </div>
+                                        <!-- rate-mobile end-->
+                                    </div>
+                                    <!-- rate-pad start-->
+                                    <div class="rate d-lg-flex d-md-block d-none">
+                                        <div class="star four mr-lg-2"></div>
+                                        <p class="font-md text-right mb-0">4.0 (112)</p>
+                                    </div>
+                                    <!-- rate-pad end-->
+                                </div>
+                                <div class="d-flex justify-content-between align-items-end">
+                                    <div>
+                                        <p class="font-md bold mb-lg-1 mb-md-2 mb-0">Deluxe Double Room</p>
+                                        <p class="font-sm text-gray600 mb-lg-5 mb-md-2 mb-0">2 guests・1 bed (King size)</p>
+                                        <div class="d-none d-md-block d-lg-flex">
+                                            <p class="bg-gray font-sm text-gray600 px-2 py-lg-1 rounded-lg mb-2 mb-lg-0 d-md-inline-block">Free cancellation</p>
+                                        </div>
+                                    </div>
+                                    <div class="d-none d-md-block">
+                                        <p class="font-sm text-gray600 mb-0 text-right bold">per night</p>
+                                        <p class="price font-xxl bold mb-0 text-nowrap raleWay">TWD 2,090</p>
+                                    </div>
+                                </div>
+                                <!-- mobile_price start-->
+                                <div class="d-block d-md-none pt-6">
+                                    <p class="bold text-right raleWay mb-0">TWD 2,090</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <div class="border-bottom my-6 d-none d-md-block"></div>
+                    <li class="row">
+                        <div class="card col-12 flex-row">
+                            <div class="col-md-4 col-5 px-0">
+                                <a href="#">
+                                    <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week8/Watana1.jpg?raw=true"
+                                        alt="room7" class="w-100">
+                                </a>
+                            </div>
+                            <div class="col-md-8 col-7">
+                                <div class="d-flex justify-content-between pt-lg-4 pt-md-2">
+                                    <div>
+                                        <p class="text-gray600 font-sm mb-0">Watana, Bangkok<span
+                                                class="text-primary d-none d-lg-inline">・6 km from center</span></p>
+                                        <h3 class="productName bold font-xxl mb-0 mb-lg-4">Bangkok Hostel</h3>
+                                        <!-- rate-mobile start-->
+                                        <div class="rate d-md-none d-flex mb-1">
+                                            <div class="star five mr-2"></div>
+                                            <p class="font-md text-right mb-0">5.0 (102)</p>
+                                        </div>
+                                        <!-- rate-mobile end-->
+                                    </div>
+                                    <!-- rate-pad start-->
+                                    <div class="rate d-lg-flex d-md-block d-none">
+                                        <div class="star five mr-lg-2"></div>
+                                        <p class="font-md text-right mb-0">5.0 (102)</p>
+                                    </div>
+                                    <!-- rate-pad end-->
+                                </div>
+                                <div class="d-flex justify-content-between align-items-end">
+                                    <div>
+                                        <p class="font-md bold mb-lg-1 mb-md-2 mb-0">Twin Room</p>
+                                        <p class="font-sm text-gray600 mb-lg-5 mb-md-2 mb-0">2 guests・2 beds (2 twins)</p>
+                                        <div class="deposit d-lg-flex d-block">
+                                            <div class="d-none d-md-block d-lg-flex">
+                                                <p class="bg-gray font-sm text-gray600 px-2 py-lg-1 mr-lg-2
+                                                mr-0 rounded-lg mb-2 mb-lg-0 d-md-inline-block">Free cancellation</p>
+                                                <p
+                                                    class="bg-gray font-sm text-gray600 px-2 py-lg-1 rounded-lg mb-0 d-md-inline-block">
+                                                    No prepayment</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-none d-md-block">
+                                        <p class="font-sm text-gray600 mb-0 text-right bold">per night</p>
+                                        <p class="price font-xxl bold mb-0 text-nowrap raleWay">TWD 880</p>
+                                    </div>
+                                </div>
+                                <!-- mobile_price start-->
+                                <div class="d-block d-md-none pt-6">
+                                    <p class="bold text-right raleWay mb-0">TWD 880</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <div class="border-bottom my-6 d-none d-md-block"></div>
+                    <li class="row">
+                        <div class="card col-12 flex-row">
+                            <div class="col-md-4 col-5 px-0">
+                                <a href="#">
+                                    <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week8/Watana2.jpg?raw=true"
+                                        alt="room8" class="w-100">
+                                </a>
+                            </div>
+                            <div class="col-md-8 col-7">
+                                <div class="d-flex justify-content-between pt-lg-4 pt-md-2">
+                                    <div>
+                                        <p class="text-gray600 font-sm mb-0">Watana, Bangkok<span
+                                                class="text-primary d-none d-lg-inline">・6 km from center</span>
+                                        </p>
+                                        <h3 class="productName bold font-xxl mb-0 mb-lg-4">Watana First Hostel</h3>
+                                        <!-- rate-mobile start-->
+                                        <div class="rate d-md-none d-flex mb-1">
+                                            <div class="star three mr-2"></div>
+                                            <p class="font-md text-right mb-0">3.0 (608)</p>
+                                        </div>
+                                        <!-- rate-mobile end-->
+                                    </div>
+                                    <!-- rate-pad start-->
+                                    <div class="rate d-lg-flex d-md-block d-none">
+                                        <div class="star three mr-lg-2"></div>
+                                        <p class="font-md text-right mb-0">3.0 (608)</p>
+                                    </div>
+                                    <!-- rate-pad end-->
+                                </div>
+                                <div class="d-flex justify-content-between align-items-end">
+                                    <div>
+                                        <p class="font-md bold mb-lg-1 mb-md-2 mb-0">Twin Room</p>
+                                        <p class="font-sm text-gray600 mb-lg-5 mb-md-2 mb-0">2 guests・2 beds (2 twins)</p>
+                                        <div class="deposit d-lg-flex d-block">
+                                            <div class="d-none d-md-block d-lg-flex">
+                                                <p class="bg-gray font-sm text-gray600 px-2 py-lg-1 rounded-lg mb-2 mb-lg-0 d-md-inline-block">Free cancellation</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-none d-md-block">
+                                        <p class="font-sm text-gray600 mb-0 text-right bold">per night</p>
+                                        <p class="price text-gray600 bold mb-0 text-nowrap raleWay text-right"><del>TWD 1,280</del></p>
+                                        <p class="price font-xxl bold mb-0 text-nowrap raleWay text-right">TWD <span class="text-primary">790</span></p>
+                                    </div>
+                                </div>
+                                <!-- mobile_price start-->
+                                <div class="d-block d-md-none">
+                                    <p class="price text-gray600 bold raleWay text-right mb-0"><del class="font-sm">TWD 1,700</del></p>
+                                    <p class="price bold mb-0 text-nowrap raleWay text-right">TWD <span class="text-primary">1,240</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <div class="border-bottom my-6 d-none d-md-block"></div>
+                    <li class="row">
+                        <div class="card col-12 flex-row">
+                            <div class="col-md-4 col-5 px-0">
+                                <a href="#">
+                                    <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week8/DinDaeng1.jpg?raw=true"
+                                        alt="room8" class="w-100">
+                                </a>
+                            </div>
+                            <div class="col-md-8 col-7">
+                                <div class="d-flex justify-content-between pt-lg-4 pt-md-2">
+                                    <div>
+                                        <p class="text-gray600 font-sm mb-0">Din Daeng, Bangkok<span
+                                                class="text-primary d-none d-lg-inline">・7 km from center</span>
+                                        </p>
+                                        <h3 class="productName bold font-xxl mb-0 mb-lg-4">DD Space</h3>
+                                        <!-- rate-mobile start-->
+                                        <div class="rate d-md-none d-flex mb-1">
+                                            <div class="star four mr-2"></div>
+                                            <p class="font-md text-right mb-0">4.0 (138)</p>
+                                        </div>
+                                        <!-- rate-mobile end-->
+                                    </div>
+                                    <!-- rate-pad start-->
+                                    <div class="rate d-lg-flex d-md-block d-none">
+                                        <div class="star four mr-lg-2"></div>
+                                        <p class="font-md text-right mb-0">4.0 (138)</p>
+                                    </div>
+                                    <!-- rate-pad end-->
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <div>
+                                        <p class="font-md bold mb-lg-1 mb-md-2 mb-0">Standard Double Room</p>
+                                        <p class="font-sm text-gray600 mb-lg-5 mb-md-2 mb-0">2 guests・1 bed (Queen size)</p>
+                                    </div>
+                                    <div class="d-none d-md-block pt-5">
+                                        <p class="font-sm text-gray600 mb-0 text-right bold">per night</p>
+                                        <p class="price text-gray600 bold mb-0 text-nowrap raleWay text-right"><del>TWD 1,700</del></p>
+                                        <p class="price font-xxl bold mb-0 text-nowrap raleWay text-right">TWD <span class="text-primary">1240</span></p>
+                                    </div>
+                                </div>
+                                <!-- mobile_price start-->
+                                <div class="d-block d-md-none">
+                                    <p class="price text-gray600 bold raleWay text-right mb-0"><del class="font-sm">TWD 1,700</del></p>
+                                    <p class="price bold mb-0 text-nowrap raleWay text-right">TWD <span class="text-primary">1240</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <div class="border-bottom my-6 d-none d-md-block"></div>
+                    <li class="row">
+                        <div class="card col-12 flex-row">
+                            <div class="col-md-4 col-5 px-0">
+                                <a href="#">
+                                    <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week8/DinDaeng2.jpg?raw=true"
+                                        alt="room9" class="w-100">
+                                </a>
+                            </div>
+                            <div class="col-md-8 col-7">
+                                <div class="d-flex justify-content-between pt-lg-4 pt-md-2">
+                                    <div>
+                                        <p class="text-gray600 font-sm mb-0">Din Daeng, Bangkok<span
+                                                class="text-primary d-none d-lg-inline">・7 km from center</span>
+                                        </p>
+                                        <h3 class="productName bold font-xxl mb-0 mb-lg-4">Dininn Hotel</h3>
+                                        <!-- rate-mobile start-->
+                                        <div class="rate d-md-none d-flex mb-1">
+                                            <div class="star three mr-2"></div>
+                                            <p class="font-md text-right mb-0">3.0 (446)</p>
+                                        </div>
+                                        <!-- rate-mobile end-->
+                                    </div>
+                                    <!-- rate-pad start-->
+                                    <div class="rate d-lg-flex d-md-block d-none">
+                                        <div class="star three mr-lg-2"></div>
+                                        <p class="font-md text-right mb-0">3.0 (446))</p>
+                                    </div>
+                                    <!-- rate-pad end-->
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <div>
+                                        <p class="font-md bold mb-lg-1 mb-md-2 mb-0">Twin Room</p>
+                                        <p class="font-sm text-gray600 mb-lg-5 mb-md-2 mb-0">2 guests・2 beds (2 twins)</p>
+                                    </div>
+                                    <div class="d-none d-md-block pt-9">
+                                        <p class="font-sm text-gray600 mb-0 text-right bold">per night</p>
+                                        <p class="price font-xxl bold mb-0 text-nowrap raleWay text-right">TWD 3,450</p>
+                                    </div>
+                                </div>
+                                <!-- mobile_price start-->
+                                <div class="d-block d-md-none">
+                                    <p class="price bold mb-0 text-nowrap raleWay text-right">TWD 3,450</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <div class="border-bottom my-6 d-none d-md-block"></div>
+                </ul>
+                <div
+                    class="pagniation px-4 py-4 bg-gray d-flex justify-content-between align-items-center mb-md-13 mb-10">
+                    <button class="btn btn-outline-primary px-4 py-2 d-lg-block d-none">Previous</button>
+                    <button class="mobile_previou srounded btn btn-outline-primary d-lg-none d-block px-2 py-2">
+                        <span class="material-icons">
+                            keyboard_arrow_left
+                        </span>
+                    </button>
+                    <ul class="d-flex list-unstyled mb-0">
+                        <li>
+                            <button class="btn bg-light px-3 py-2">1</button>
+                        </li>
+                        <li>
+                            <button class="btn px-3 py-2">2</button>
+                        </li>
+                        <li>
+                            <button class="btn px-3 py-2 d-md-block d-none">3</button>
+                        </li>
+                        <li>
+                            <button class="btn px-3 py-2 d-lg-block d-none">4</button>
+                        </li>
+                        <li>
+                            <button class="btn px-3 py-2 d-lg-block d-none">5</button>
+                        </li>
+                        <li>
+                            <button class="btn px-3 py-2 d-lg-block d-none">6</button>
+                        </li>
+                        <li>
+                            <button class="btn px-3 py-2">...</button>
+                        </li>
+                        <li>
+                            <button class="btn px-3 py-2">9</button>
+                        </li>
+                    </ul>
+                    <button class="btn btn-primary d-lg-block d-none">NEXT</button>
+                     <button class="mobile_next srounded btn btn-primary d-lg-none d-block px-2 py-2">
+                        <span class="material-icons">
+                            keyboard_arrow_right
+                        </span>
+                    </button>
+                </div>
+            </section>
+        </div>
+    </div>
+
+</div>

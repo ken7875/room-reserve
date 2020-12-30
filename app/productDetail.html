@@ -1,0 +1,516 @@
+---
+title: Rachada
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+header: true
+footer: true
+subscribeLg: false
+subscribeSm: true
+---
+
+<div class="mobileImg swiper-container d-block d-md-none">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide w-100">
+          <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week8/Rachada1.jpg?raw=true" alt="img" class="w-100">
+      </div>
+      <div class="swiper-slide w-100">
+        <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week8/Rachada2.jpg?raw=true" alt="img" class="w-100">
+      </div>
+      <div class="swiper-slide">
+        <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week8/Rachada4.jpg?raw=true" alt="img" class="w-100 mb-2">
+      </div>
+      <div class="swiper-slide">
+          <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week8/Rachada4.jpg?raw=true" alt="img" class="w-100">
+      </div>
+    </div>
+    <!-- Add Arrows -->
+    <div class="mobile_prev">
+        <span class="material-icons text-light">
+            keyboard_arrow_left
+        </span>
+    </div>
+    <div class="mobile_next">
+        <span class="material-icons text-light">
+            keyboard_arrow_right
+        </span>
+    </div>
+</div>
+<div class="container productDetail">
+    <!-- desktop_img start -->
+    <div class="row no-gutters mb-8">
+        <div class="col-md-7 d-none d-md-block">
+            <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week8/Rachada1.jpg?raw=true" alt="main photo" class="mainImg col-12 pl-0">
+        </div>
+        <div class="col-md-5 d-none d-md-block">
+            <div class="row">
+                <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week8/Rachada2.jpg?raw=true" alt="sec photo" class="secImg col-12 mb-2">
+                <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week8/Rachada3.jpg?raw=true" alt="small photo" class="col-5 secImg">
+                <div class="col-7">
+                    <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week8/Rachada4.jpg?raw=true" alt="small photo" class="moreImg w-100 mb-2">
+                    <button class="btn btn-dark px-lg-10 py-lg-3 w-100 px-md-4 py-md-1 font-sm">See All 10 photos</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- desktop_img end -->
+    <div class="row no-gutters">
+        <div class="col-lg-7 col-md-9 col-12 mb-13">
+            <div class="d-flex">
+                <h2 class="productName mr-4 mb-0 text-nowrap">Rachada Hotel</h2>
+                <div class="d-flex align-items-center mb-1">
+                    <div class="star four mr-2"></div>
+                    <span class="text-muted">4.0(283)</span>
+                </div>
+            </div>
+            <p class="font-md text-primary mb-8">
+                318 Phaya Thai Road, Ratchathewi, Phaya Thai, 10400 Bangkok, Thailand
+            </p>
+            <p class="text-muted">
+                The Rachada Hotel is an establishment that provides paid lodging on a short-term basis. Facilities provided may range from a modest-quality mattress in a small room to large suites with bigger, higher-quality beds, a dresser, a refrigerator and other kitchen facilities, upholstered chairs, a flat screen television, and en-suite bathrooms.
+            </p>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-7 col-md-12 mb-10 d-none d-md-block">
+            <h3>Select your room</h3>
+            <button class="btn btn-gray px-4 py-2 font-md">Bangkok, Thailand</button>
+            <button class="btn btn-gray px-4 py-2 font-md">17 June - 19 June・2 nights</button>
+            <button class="btn btn-gray px-4 py-2 font-md mr-4">2 adults・1 room</button>
+            <a href="#">EDIT DETAIL</a>
+        </div>
+    </div>
+    <ul class="row border-bottom py-2 list-unstyled d-none d-md-flex">
+        <li class="col-6 bold">Room Type</li>
+        <li class="col-2 bold text-center">Sleeps</li>
+        <li class="col-2 bold text-center">Price</li>
+        <li class="col-2 bold text-center">Rooms</li>
+    </ul>
+    <ul class="roomType row no-gutters list-unstyled">
+        <li class="card mb-md-6 mb-2">
+            <div class="row pb-md-6">
+                <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week8/roomA.jpg?raw=true" alt="roomA" class="col-md-3 col-6">
+                <div class="col-md-3 col-6 align-self-center">
+                    <h3 class="font-lg text-nowrap mt-3 mt-md-0">Deluxe Double Room A</h3>
+                    <p class="font-md">1 bed (Queen size)</p>
+                    <!-- desktop_function start -->
+                    <div class="row d-lg-flex d-none">
+                        <div class="col-6">
+                            <span class="material-icons font-sm text-gray600 text-gray600">
+                                wifi
+                            </span>
+                            <span class="font-md text-gray600">Wi-Fi</span>
+                        </div>
+                        <div class="col-6">
+                            <span class="material-icons font-sm text-gray600">
+                                room_service
+                            </span>
+                            <span class="font-md text-gray600">Room Service</span>
+                        </div>
+                        <div class="col-6">
+                            <span class="material-icons font-sm text-gray600">
+                                restaurant
+                            </span>
+                            <span class="font-md text-gray600">Breakfast</span>
+                        </div>
+                        <div class="col-6">
+                            <span class="material-icons font-sm text-gray600">
+                                smoke_free
+                            </span>
+                            <span class="font-md text-gray600">Smoke Free</span>
+                        </div>
+                        <div class="col-12">
+                            <span class="material-icons text-gray600 font-sm">
+                                tv
+                            </span>
+                            <span class="font-md text-gray600">Television</span>
+                        </div>
+                        <div class="col-12">
+                            <span class="material-icons font-sm">
+                                ac_unit
+                            </span>
+                            <span class="font-md text-gray600">Air Conditioner</span>
+                        </div>
+                    </div>
+                    <!-- desktop_function end -->
+                    <!-- mobile_function start -->
+                    <div class="d-flex mb-4 d-lg-none">
+                        <span class="material-icons font-md mr-2 text-gray600 text-gray600">
+                            wifi
+                        </span>
+                        <span class="material-icons text-gray600 font-md mr-2">
+                            tv
+                        </span>
+                        <span class="material-icons font-md mr-2 text-gray600">
+                            restaurant
+                        </span>
+                        <span class="material-icons font-md mr-2">
+                            ac_unit
+                        </span>
+                        <span class="material-icons font-md mr-2 text-gray600">
+                            smoke_free
+                        </span>
+                        <span class="material-icons font-md mr-2 text-gray600">
+                            room_service
+                        </span>
+                    </div>
+                    <!-- mobile_function end -->
+                    <div class="d-flex d-md-none">
+                        <span class="material-icons">
+                            person
+                        </span>
+                        <span class="material-icons">
+                            person
+                        </span>
+                    </div>
+                </div>
+                <div class="col-md-2 text-center align-self-center d-none d-md-block">
+                    <span class="material-icons">
+                        person
+                    </span>
+                    <span class="material-icons">
+                        person
+                    </span>
+                </div>
+                <div class="col-md-2 align-self-center d-none d-md-block">
+                    <p class="text-center mb-0">
+                        <del class="font-md text-gray600 text-center">TWD 1,600</del>
+                    </p>
+                    <p class="bold mb-0 text-center">TWD <span class="text-primary bold">1,490</span></p>
+                    <p class="font-sm text-gray600 text-center">per night</p>
+                </div>
+                <div class="input-group mb-3 col-md-2 d-none d-md-flex align-items-center justify-content-between">
+                    <button class="minusRoom btn btn-white px-0 border-0" type="button">
+                        <span class="material-icons">
+                            remove
+                        </span>
+                    </button>
+                    <input type="text" class="form-control mb-1 roomQuantity border-0 text-center" value="0">
+                    <div class="input-group-append">
+                      <button class="addRoom btn btn-white px-0 border-0" type="button" id="button-addon2">
+                        <span class="material-icons">
+                            add
+                        </span>
+                      </button>
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer d-block d-md-none">
+                <div class="row align-items-center">
+                    <div class="col-6 align-self-center d-flex d-md-none justify-content-between">
+                        <button class="minusRoom btn btn-white py-0 border-0" type="button">
+                            <span class="material-icons font-lg">
+                                remove
+                            </span>
+                        </button>
+                        <input type="text" class="form-control mb-1 roomQuantity border-0 text-center" value="0" readonly>
+                        <button class="addRoom btn btn-white py-0 border-0" type="button">
+                            <span class="material-icons font-lg">
+                                add
+                            </span>
+                        </button>
+                    </div>
+                    <div class="col-6 text-right">
+                        <del class="font-md text-gray600">TWD 1,600</del>
+                        <p class="bold mb-0">TWD <span class="text-primary bold">1,490</span></p>
+                    </div>                   
+                </div>
+            </div>
+            <div class="border-bottom"></div>
+        </li>
+        <li class="card mb-md-6 mb-2">
+            <div class="row pb-md-6">
+                <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week8/roomB.jpg?raw=true" alt="roomB" class="col-md-3 col-6">
+                <div class="col-md-3 col-6 align-self-center">
+                    <h3 class="font-lg text-nowrap mt-3 mt-md-0">Deluxe Double Room B</h3>
+                    <p class="font-md">1 bed (Queen size)</p>
+                    <!-- desktop_function start -->
+                    <div class="row d-lg-flex d-none">
+                        <div class="col-6">
+                            <span class="material-icons font-sm text-gray600 text-gray600">
+                                wifi
+                            </span>
+                            <span class="font-md text-gray600">Wi-Fi</span>
+                        </div>
+                        <div class="col-6">
+                            <span class="material-icons font-sm text-gray600">
+                                room_service
+                            </span>
+                            <span class="font-md text-gray600">Room Service</span>
+                        </div>
+                        <div class="col-6">
+                            <span class="material-icons font-sm text-gray600">
+                                restaurant
+                            </span>
+                            <span class="font-md text-gray600">Breakfast</span>
+                        </div>
+                        <div class="col-6">
+                            <span class="material-icons font-sm text-gray600">
+                                smoke_free
+                            </span>
+                            <span class="font-md text-gray600">Smoke Free</span>
+                        </div>
+                        <div class="col-12">
+                            <span class="material-icons text-gray600 font-sm">
+                                tv
+                            </span>
+                            <span class="font-md text-gray600">Television</span>
+                        </div>
+                        <div class="col-12">
+                            <span class="material-icons font-sm">
+                                ac_unit
+                            </span>
+                            <span class="font-md text-gray600">Air Conditioner</span>
+                        </div>
+                    </div>
+                    <!-- desktop_function end -->
+                    <!-- mobile_function start -->
+                    <div class="d-flex mb-4 d-lg-none">
+                        <span class="material-icons font-md mr-2 text-gray600 text-gray600">
+                            wifi
+                        </span>
+                        <span class="material-icons text-gray600 font-md mr-2">
+                            tv
+                        </span>
+                        <span class="material-icons font-md mr-2 text-gray600">
+                            restaurant
+                        </span>
+                        <span class="material-icons font-md mr-2">
+                            ac_unit
+                        </span>
+                        <span class="material-icons font-md mr-2 text-gray600">
+                            smoke_free
+                        </span>
+                        <span class="material-icons font-md mr-2 text-gray600">
+                            room_service
+                        </span>
+                    </div>
+                    <!-- mobile_function end -->
+                    <div class="d-flex d-md-none">
+                        <span class="material-icons">
+                            person
+                        </span>
+                        <span class="material-icons">
+                            person
+                        </span>
+                    </div>
+                </div>
+                <div class="col-md-2 text-center align-self-center d-none d-md-block">
+                    <span class="material-icons">
+                        person
+                    </span>
+                    <span class="material-icons">
+                        person
+                    </span>
+                </div>
+                <div class="col-md-2 align-self-center d-none d-md-block">
+                    <p class="bold mb-0 text-center">TWD 1,690</p>
+                    <p class="font-sm text-gray600 text-center">per night</p>
+                </div>
+                <div class="input-group mb-3 col-md-2 d-none d-md-flex align-items-center justify-content-between">
+                    <button class="minusRoom btn btn-white px-0 border-0" type="button">
+                        <span class="material-icons">
+                            remove
+                        </span>
+                    </button>
+                    <input type="text" class="form-control mb-1 roomQuantity border-0 text-center" value="0">
+                    <div class="input-group-append">
+                      <button class="addRoom btn btn-white px-0 border-0" type="button" id="button-addon2">
+                        <span class="material-icons">
+                            add
+                        </span>
+                      </button>
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer d-block d-md-none">
+                <div class="row align-items-center">
+                    <div class="col-6 align-self-center d-flex d-md-none justify-content-between">
+                        <button class="minusRoom btn btn-white py-0 border-0" type="button">
+                            <span class="material-icons font-lg">
+                                remove
+                            </span>
+                        </button>
+                        <input type="text" class="form-control mb-1 roomQuantity border-0 text-center" value="0" readonly>
+                        <button class="addRoom btn btn-white py-0 border-0" type="button">
+                            <span class="material-icons font-lg">
+                                add
+                            </span>
+                        </button>
+                    </div>
+                    <div class="col-6 text-right">
+                        
+                        <p class="bold mb-0">TWD 1,490</p>
+                    </div>                   
+                </div>
+            </div>
+            <div class="border-bottom"></div>
+        </li>
+        <li class="card mb-md-6 mb-2">
+            <div class="row pb-md-6">
+                <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week8/Rachada1.jpg?raw=true" alt="rom with pool" class="col-md-3 col-6">
+                <div class="col-md-3 col-6 align-self-center">
+                    <h3 class="font-lg text-nowrap mt-3 mt-md-0">Deluxe Suite with Pool</h3>
+                    <p class="font-md">1 bed (Queen size)</p>
+                    <!-- desktop_function start -->
+                    <div class="row d-lg-flex d-none">
+                        <div class="col-6">
+                            <span class="material-icons font-sm text-gray600">
+                                wifi
+                            </span>
+                            <span class="font-md text-gray600">Wi-Fi</span>
+                        </div>
+                        <div class="col-6">
+                            <span class="material-icons font-sm text-gray600">
+                                kitchen
+                            </span>
+                            <span class="font-md text-gray600">Refrigerator</span>
+                        </div>
+                        <div class="col-6">
+                            <span class="material-icons font-sm text-gray600">
+                                restaurant
+                            </span>
+                            <span class="font-md text-gray600">Breakfast</span>
+                        </div>
+                        <div class="col-6">
+                            <span class="material-icons font-sm text-gray600">
+                                room_service
+                            </span>
+                            <span class="font-md text-gray600">Room Service</span>
+                        </div>
+                        <div class="col-6">
+                            <span class="material-icons text-gray600 font-sm">
+                                tv
+                            </span>
+                            <span class="font-md text-gray600">Television</span>
+                        </div>
+                        <div class="col-6">
+                            <span class="material-icons font-sm text-gray600">
+                                local_bar
+                                </span>
+                            <span class="font-md text-gray600">Mini Bar</span>
+                        </div>
+                        <div class="col-6 text-nowrap">
+                            <span class="material-icons font-sm text-gray600">
+                                ac_unit
+                            </span>
+                            <span class="font-md text-gray600">Air Conditioner</span>
+                        </div>
+                        <div class="col-6">
+                            <span class="material-icons font-sm text-gray600">
+                                smoke_free
+                            </span>
+                            <span class="font-md text-gray600">Smoke Free</span>
+                        </div>
+                    </div>
+                    <!-- desktop_function end -->
+                    <!-- mobile_function start -->
+                    <div class="d-flex mb-4 d-lg-none">
+                        <span class="material-icons font-md mr-2 text-gray600 text-gray600">
+                            wifi
+                        </span>
+                        <span class="material-icons text-gray600 font-md mr-2">
+                            tv
+                        </span>
+                        <span class="material-icons font-md mr-2 text-gray600">
+                            restaurant
+                        </span>
+                        <span class="material-icons font-md mr-2">
+                            ac_unit
+                        </span>
+                        <span class="material-icons font-sm mr-2 text-gray600">
+                            kitchen
+                        </span>
+                        <span class="material-icons font-md mr-2 text-gray600">
+                            room_service
+                        </span>
+                        <span class="material-icons font-md mr-2 text-gray600">
+                            local_bar
+                        </span>
+                        <span class="material-icons font-md mr-2 text-gray600">
+                            smoke_free
+                        </span>
+                    </div>
+                    <!-- mobile_function end -->
+                    <div class="d-flex d-md-none">
+                        <span class="material-icons">
+                            person
+                        </span>
+                        <span class="material-icons">
+                            person
+                        </span>
+                    </div>
+                </div>
+                <div class="col-md-2 text-center align-self-center d-none d-md-block">
+                    <span class="material-icons">
+                        person
+                    </span>
+                    <span class="material-icons">
+                        person
+                    </span>
+                </div>
+                <div class="col-md-2 align-self-center d-none d-md-block">
+                    <p class="bold mb-0 text-center">TWD 1,980</p>
+                    <p class="font-sm text-gray600 text-center">per night</p>
+                </div>
+                <div class="input-group mb-3 col-md-2 d-none d-md-flex align-items-center justify-content-between">
+                    <button class="minusRoom btn btn-white px-0 border-0" type="button">
+                        <span class="material-icons">
+                            remove
+                        </span>
+                    </button>
+                    <input type="text" class="form-control mb-1 roomQuantity border-0 text-center" value="0">
+                    <div class="input-group-append">
+                      <button class="addRoom btn btn-white px-0 border-0" type="button">
+                        <span class="material-icons">
+                            add
+                        </span>
+                      </button>
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer d-block d-md-none">
+                <div class="row align-items-center">
+                    <div class="col-6 align-self-center d-flex d-md-none justify-content-between">
+                        <button class="minusRoom btn btn-white py-0 border-0" type="button">
+                            <span class="material-icons font-lg">
+                                remove
+                            </span>
+                        </button>
+                        <input type="text" class="form-control mb-1 roomQuantity border-0 text-center" value="0" readonly>
+                        <button class="addRoom btn btn-white py-0 border-0" type="button">
+                            <span class="material-icons font-lg">
+                                add
+                            </span>
+                        </button>
+                    </div>
+                    <div class="col-6 text-right">
+                        
+                        <p class="bold mb-0">TWD 1,980</p>
+                    </div>                   
+                </div>
+            </div>
+            <div class="border-bottom"></div>
+        </li>
+    </ul>
+</div>
+<div class="alert row bg-dark fixed-bottom d-none mb-0 animate__animated">
+    <div class="container">
+        <ul class="d-md-flex d-block w-100 justify-content-between align-items-center">
+            <li class="nav-item">
+                <p class="font-sm text-gray text-right text-md-left">1 room・2 night</p>
+                <h4 class="price text-light text-right text-md-left">TWD 3,960</h4>
+            </li>
+            <li class="nav-item d-flex">
+                <button class="cancelBtn btn btn-outline-light mr-2 py-4 px-8 w-50">
+                    Cancel
+                </button>
+                <button class="btn btn-primary text-white py-4 px-8 w-50" onclick="location.href='reservationDetail.html'">
+                    Reserve
+                </button>
+            </li>
+        </ul>
+    </div>
+</div>

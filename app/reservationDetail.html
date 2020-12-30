@@ -1,0 +1,71 @@
+---
+title: 訂房資料
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+header: true
+footer: true
+subscribeLg: false
+subscribeSm: false
+---
+
+<div class="reservationDetail container h-100">
+    <div class="row">
+        <div class="col-lg-4 offset-lg-2 col-md-6 col-12">
+            <h2>Reservation details</h2>
+            <form>
+                <div class="row">
+                  <div class="col-12 mb-4">
+                    <label for="name" class="text-gray600">Name</label>
+                    <input type="text" class="form-control py-7" id="name">
+                  </div>
+                  <div class="col-12 mb-4">
+                    <label for="email" class="text-gray600">email</label>
+                    <input type="email" class="form-control py-7" id="email">
+                  </div>
+                  <div class="col-12 mb-4">
+                    <label for="phone" class="text-gray600">phone(optional)</label>
+                    <input type="phone" class="form-control py-7" id="phone">
+                  </div>                               
+                </div>                
+            </form>            
+            <div class="col-12 px-0 text-center">
+                <button class="reservationBtn w-100 btn btn-primary text-white py-4 mb-2" onclick="location.href='received.html'">Reserve</button>
+                <a href="#" class="text-primary">Reserve now, pay at stay</a>
+            </div>
+        </div>
+        <div class="col-lg-4 col-6 d-none d-md-block">
+            <ul class="bg-gray list-unstyled px-6">
+                <li class="border-bottom border-white py-6">
+                    <ul class="list-unstyled">
+                        <li class="bold mb-4">Booking details</li>
+                        <li class="mb-2 text-gray600 font-md">17 June 2020 - 19 June 2020・2 nights</li>
+                        <li class="mb-2 text-gray600 font-md">2 adults・1 room</li>
+                        <li class="mb-2 text-gray600 font-md">Rachada Hotel</li>
+                    </ul>
+                </li>
+                <li class="border-bottom border-white py-6 mb-6">
+                    <ul class="list-unstyled">
+                        <li class="bold mb-4">Price summary</li>
+                        <li class="text-gray600 font-md mb-2 row">
+                            <p class="col-8">Deluxe Suite with Pool</p>
+                            <p class="col-4">TWD 3,960</p>                    
+                        </li>
+                        <li class="text-gray600 font-md mb-2 row">
+                            <p class="col-8">VAT (7%)</p>
+                            <p class="col-4">TWD 277</p>
+                        </li>
+                        <li class="text-gray600 font-md mb-2 row">
+                            <p class="col-8">Property service charge</p>
+                            <p class="col-4">TWD 396</p>
+                        </li>
+                    </ul>
+                </li>
+                <div class="d-flex justify-content-between">
+                    <p class="text-gray600">Total</p>
+                    <p class="bold">TWD 4,633</p>
+                </div>
+            </ul>
+        </div>
+    </div>
+</div>

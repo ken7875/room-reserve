@@ -1,0 +1,62 @@
+.card{
+    img{
+        height: 175px;
+        @include pad(){
+            height: 185px;
+        }
+    }
+}
+.topChoice .card{    
+    .title{
+        font-weight: bold;
+    }
+    .card-img-top{
+        border-radius: 8px;
+    }
+}
+
+.inspiration .card{
+    h4{
+        white-space: nowrap;
+        @include pad(){
+            white-space: normal;
+        }
+    }
+    p{
+        color: #00000099;
+    }
+    img{
+        height: 263px;
+    }
+}
+.bangkok .card{
+    border: none;
+    @include mobile(){
+        border-bottom: 3px solid $gray;
+    }
+    @include pad(){
+        img{
+            height: 150px;
+        }
+        .productName{
+            @include pad(){
+                font-size: 16px;
+            }
+        }
+        .deposit{
+            font-size: 10px;
+        }
+        .price{
+            font-size: 16px;
+        }
+    }
+}
+.roomType .card{
+    border: none;
+    @include mobile(){
+        border: 1px solid $gray;
+    }
+    .card-footer{
+        background-color: #e9ecef;
+    }
+}
