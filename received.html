@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>確認明細</title>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons"
+  rel="stylesheet">  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+  <!-- daterangepicker -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/style/all.css">  
+</head>
+
+<body>
+  
+  
+    <header class="header py-6">
+    <div class="container d-flex justify-content-between">
+      <a href="#" class="text-dark d-md-none">
+        <span class="material-icons">
+          menu
+        </span>
+      </a>
+      <h1 class="logo">
+        <a href="index.html">ALOHA</a>
+      </h1>
+      <a href="logIn.html" class="text-dark d-md-none">
+        Login
+      </a>
+      <ul class="list-unstyled d-md-flex d-none">
+        <li class="ml-10">
+          <a class="text-dark" href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="material-icons">
+              language
+            </span>
+            <span class="material-icons">
+              arrow_drop_down
+            </span>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <a class="dropdown-item" href="#">中文</a>
+            <a class="dropdown-item" href="#">English</a>
+          </div>
+        </li>
+        <li class="ml-10"><a href="#" class="text-dark">sign up</a></li>
+        <li class="ml-10"><a href="logIn.html" class="text-dark">log In</a></li>
+      </ul>
+    </div>
+</header>
+  
+
+  
+<div class="received container h-100">
+    <div class="row mb-10">
+        <div class="col-lg-8 offset-lg-2 col-12">
+            <h2 class="mb-md-11">Reservation received!</h2>
+            <ul class="list-unstyled">
+                <li class="row no-gutters">
+                    <p class="bold col-md-3 col-lg-2 col-2">Guest</p>
+                    <p class="text-gray600">David Lin</p>
+                </li>
+                <li class="row no-gutters">
+                    <p class="bold col-md-3 col-lg-2 col-2">Email</p>
+                    <div class="d-md-flex">
+                        <p class="mr-4 text-gray600">received.html</p>
+                        <a href="#">Confirmation email sent to this address</a>
+                    </div>
+                </li>
+                <li class="row no-gutters">
+                    <p class="bold col-md-3 col-lg-2 col-2">phone</p>
+                    <p class="text-gray600">+886 9 32 456 789</p>
+                </li>
+                <li class="row no-gutters">
+                    <p class="bold col-md-3 col-lg-2 col-2">room</p>
+                    <p class="text-gray600">Deluxe Suite with Pool / 2 nights</p>
+                </li>
+                <li class="row no-gutters">
+                    <p class="bold col-md-3 col-lg-2 col-2">check-in</p>
+                    <p class="text-gray600">Wednesday, 17 June 2020</p>
+                </li>
+                <li class="row no-gutters">
+                    <p class="bold col-md-3 col-lg-2 col-2">check-out</p>
+                    <p class="text-gray600">Friday, 19 June 2020</p>
+                </li>
+            </ul>
+        </div>        
+    </div>
+    <div class="btnGroup d-md-flex justify-content-end">
+        <button type="submit" class="btn btn-outline-primary px-8 py-4 mb-2 mb-md-0" onclick="location.href='reservationDetail.html'">edit reservation</button>
+        <button type="submit" class="btn btn-primary ml-md-2 px-8 py-4" onclick="location.href='index.html'">Homepage</button>
+    </div>
+</div>
+
+  
+  
+  
+
+  
+    <footer class="footer py-6">
+    <div class="container d-flex align-items-center justify-content-md-between justify-content-center">
+      <div class="d-flex flex-md-row flex-column-reverse align-items-center">
+        <p class="text-center text-gray600 font-md mb-0">© 2020 ALOHA, Inc. All rights reserved.</p>
+        <ul class="d-flex text-gray600 font-md mb-4 mb-md-0 list-unstyled">
+          <li class="mr-6">FAQs</li>
+          <li class="mr-6">Terms of use</li>
+          <li>Privacy policy</li>
+        </ul>
+      </div>
+      <ul class="d-lg-flex d-none mb-0 list-unstyled">
+        <li class="mr-6 dropdown">
+          <a href="#" class="d-flex align-items-center" id="languageDropdown" data-toggle="dropdown">
+            <span class="material-icons text-dark">
+              language
+            </span>
+            <span class="text-gray600 font-md text-dark">English</span>
+            <span class="material-icons text-dark">
+              arrow_drop_down
+            </span>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="languageDropdown">
+            <a class="dropdown-item" href="#">中文</a>
+            <a class="dropdown-item" href="#">English</a>
+          </div>
+        </li>        
+        <li>
+          <a href="#" class="d-flex align-items-center" id="MoneyDropdown" data-toggle="dropdown">
+            <span class="material-icons text-dark">
+              attach_money
+            </span>
+            <span class="text-gray600 font-md text-dark">TWD</span>
+            <span class="material-icons text-dark">
+              arrow_drop_down
+            </span>
+            <div class="dropdown-menu" aria-labelledby="MoneyDropdown">
+              <a class="dropdown-item" href="#">台幣</a>
+              <a class="dropdown-item" href="#">USD</a>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+  
+  <script src="./assets/js/vendors.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+  <!-- rangeSlider（CDN） --> 
+  <script src="./assets/js/all.js"></script> 
+</body>
+</html>
