@@ -7,11 +7,12 @@ $(document).ready(function () {
     spaceBetween: 30,
     // Optional parameters
     direction: 'horizontal',
-    loop: false,
+    loop: true,
     slidesPerView: 4,
     autoplayStopOnLast: false,
-    // loop false also
-    // If we need pagination
+    autoplay: {
+      delay: 3000
+    },
     pagination: {
       el: '.swiper-pagination',
       clickable: true
@@ -47,7 +48,12 @@ $(document).ready(function () {
       nextEl: '.mobile_next',
       prevEl: '.mobile_prev'
     },
-    loop: true
+    loop: true,
+    autoplayStopOnLast: false,
+    // loop false
+    autoplay: {
+      delay: 3000
+    }
   }); // productDetail reserve input
 
   var roomQuantity = document.querySelectorAll('.roomQuantity');
