@@ -6,10 +6,12 @@ $(document).ready(() => {
     spaceBetween: 30,
     // Optional parameters
     direction: 'horizontal',
-    loop: false,
+    loop: true,
     slidesPerView : 4,
-    autoplayStopOnLast: false, // loop false also
-    // If we need pagination
+    autoplayStopOnLast: false,
+    autoplay: {
+      delay: 3000,
+    },
     pagination: {
       el: '.swiper-pagination',
       clickable: true,
@@ -48,6 +50,10 @@ $(document).ready(() => {
       prevEl: '.mobile_prev',
     },
     loop: true,
+    autoplayStopOnLast: false, // loop false
+    autoplay: {
+      delay: 3000,
+    },
   });
 
   // productDetail reserve input
