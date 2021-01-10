@@ -1,4 +1,8 @@
 .logIn{
+    .bgImg{
+        background-image: url('https://github.com/hexschool/webLayoutTraining1st/blob/master/week8/login.jpg?raw=true');
+        position: fixed;
+    }
     .content{
         padding-top: 152px;
         @include pad(){

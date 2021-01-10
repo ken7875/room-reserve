@@ -1,5 +1,4 @@
 .topChoice{
-  overflow: visible;
   @include pad(){
     max-width: 720px;
   }
@@ -23,10 +22,12 @@
         color: #000000;
         border-radius: 50%;
         &.prev {
-          left: -25px;
+          left: 0px;
+          top: 50%;
         }
         &.next {
-          right: -25px;
+          right: 0px;
+          top: 50%;
         }
       }
     }

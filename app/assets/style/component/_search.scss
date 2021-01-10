@@ -1,4 +1,5 @@
 .search{
+    z-index: 100;
     transform: translateY(-50%);
     .search-inner{
         height: 100%;
@@ -25,6 +26,7 @@
 }
 
 .bangkok .search{
+    z-index: 100;
     transform: translateY(0);
     .checkIn{
         width: 30%;
