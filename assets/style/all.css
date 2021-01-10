@@ -10560,6 +10560,7 @@ h3 {
   width: 18px; }
 
 .search {
+  z-index: 100;
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
           transform: translateY(-50%); }
@@ -10581,6 +10582,7 @@ h3 {
               transform: translateY(-29%); } }
 
 .bangkok .search {
+  z-index: 100;
   -webkit-transform: translateY(0);
       -ms-transform: translateY(0);
           transform: translateY(0); }
@@ -10590,43 +10592,45 @@ h3 {
     .bangkok .search .dropdown {
       width: 25%; } }
 
-.topChoice {
-  overflow: visible; }
-  @media (max-width: 992px) {
-    .topChoice {
-      max-width: 720px; } }
-  @media (max-width: 768px) {
-    .topChoice {
-      max-width: 318.33px; } }
-  .topChoice .slideshow {
-    position: relative; }
-    .topChoice .slideshow-navigation-button {
-      cursor: pointer;
-      position: absolute;
-      top: 30%;
-      -webkit-transform: translateY(-50%);
-          -ms-transform: translateY(-50%);
-              transform: translateY(-50%);
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
-      z-index: 1000;
-      -webkit-transition: all .3s ease;
-      -o-transition: all .3s ease;
-      transition: all .3s ease;
-      background-color: #F1F0F8;
-      color: #000000;
-      border-radius: 50%; }
-      .topChoice .slideshow-navigation-button.prev {
-        left: -25px; }
-      .topChoice .slideshow-navigation-button.next {
-        right: -25px; }
+@media (max-width: 992px) {
+  .topChoice {
+    max-width: 720px; } }
+
+@media (max-width: 768px) {
+  .topChoice {
+    max-width: 318.33px; } }
+
+.topChoice .slideshow {
+  position: relative; }
+  .topChoice .slideshow-navigation-button {
+    cursor: pointer;
+    position: absolute;
+    top: 30%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    z-index: 1000;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+    background-color: #F1F0F8;
+    color: #000000;
+    border-radius: 50%; }
+    .topChoice .slideshow-navigation-button.prev {
+      left: 0px;
+      top: 50%; }
+    .topChoice .slideshow-navigation-button.next {
+      right: 0px;
+      top: 50%; }
 
 .city li {
   border-bottom: 2px solid #F1F0F8;
@@ -10749,6 +10753,10 @@ h3 {
 @media (max-width: 768px) {
   .received .btnGroup button {
     width: 100%; } }
+
+.logIn .bgImg {
+  background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/week8/login.jpg?raw=true");
+  position: fixed; }
 
 .logIn .content {
   padding-top: 152px; }

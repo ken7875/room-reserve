@@ -80,7 +80,7 @@
 </div>
 <div class="container">
   <div class="row">
-    <div class="search col-10 offset-1 bg-gray py-6">
+    <div class="search col-10 offset-1 bg-gray py-6 position-relative">
       <div class="search-inner d-flex align-items-center flex-wrap flex-lg-nowrap">
         <div class="dropdown bg-white  mb-4 mb-lg-0 rounded w-100 mr-4">
           <a href="#" class="d-flex py-4" id="location" data-toggle="dropdown">
@@ -218,8 +218,8 @@
     </div>
   </div>
 </div>
-<div class="container mb-13">
-  <h3>Top Choices</h3>
+<div class="container mb-13 swiper-container">
+  <h3 class="text-md-lg text-lg-xl">Top Choices</h3>
   <ul class="city d-flex mb-7 list-unstyled">
     <li class="px-5 active">
       <a href="#" class=""><p class="font-xxl pt-5 mb-0">Bali128</p></a>        
@@ -231,7 +231,7 @@
       <a href="#" class="text-dark"><p class="font-xxl pt-5 mb-0">Taipei53</p></a>
     </li>      
   </ul>
-  <div class="topChoice swiper-container">
+  <div class="topChoice ">
     <!-- Additional required wrapper -->
     <div class="swiper-wrapper">
         <!-- Slides -->
@@ -411,7 +411,7 @@
     <div class="subscribe-lg w-100 bg-gray">
     <div class="container h-100">
       <div class="content row">
-        <h2 class="title col-md-12 text-center mb-5">Subscribe for Exclusive Offer</h2>
+        <label class="title col-md-12 text-center mb-5">Subscribe for Exclusive Offer</label>
         <div class="input-group col-md-6 offset-md-3">
             <input type="text" class="form-control py-7 px-5" placeholder="Your email address" aria-label="Your email address" aria-describedby="button-addon2">
             <div class="input-group-append">
@@ -429,11 +429,11 @@
     <footer class="footer py-6">
     <div class="container d-flex align-items-center justify-content-md-between justify-content-center">
       <div class="d-flex flex-md-row flex-column-reverse align-items-center">
-        <p class="text-center text-gray600 font-md mb-0">© 2020 ALOHA, Inc. All rights reserved.</p>
-        <ul class="d-flex text-gray600 font-md mb-4 mb-md-0 list-unstyled">
-          <li class="mr-6">FAQs</li>
-          <li class="mr-6">Terms of use</li>
-          <li>Privacy policy</li>
+        <h5 class="text-center text-gray600 font-md mb-0">© 2020 ALOHA, Inc. All rights reserved.</h5>
+        <ul class="d-flex text-gray600 font-md mb-4 mb-md-0 list-unstyled ml-12">
+          <li class="mr-6"><a href="#">FAQs</a></li>
+          <li class="mr-6"><a href="#">Terms of use</a></li>
+          <li><a href="#">Privacy policy</a></li>
         </ul>
       </div>
       <ul class="d-lg-flex d-none mb-0 list-unstyled">
