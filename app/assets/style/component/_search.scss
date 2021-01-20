@@ -4,15 +4,20 @@
     .search-inner{
         height: 100%;
         .dropdown{
+            display: flex;
+            flex: 1 1 232px;
             .dropdown-menu{
                 transform: translate3d(0px, 55px, 0px) !important;
                 z-index: 1000;
             }
         }
         .guest{
-            .roomQuantity{
+            .personQuantity{
                 width: 26px;
             }
+        }
+        input:focus{
+            outline: none !important;
         }
         .searchBtn{
             @include pad(){

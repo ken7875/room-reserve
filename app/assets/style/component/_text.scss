@@ -1,21 +1,12 @@
-.font{
-    &-xs{
-        font-size: 10px;
-    }
-    &-sm{
-        font-size: 12px;
-    }
-    &-md{
-        font-size: 14px;
-    }
-    &-lg{
-        font-size: 16px;
-    }
-    &-xl{
-        font-size: 20px;
-    }
-    &-xxl{
-        font-size: 24px;
+@each $breakpoint in map-keys($grid-breakpoints) {
+    @each $size, $value in $font-size {
+        @include media-breakpoint-up($breakpoint) {
+            $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+        
+                .text#{$infix}-#{$size}{
+                    @include font-size($value)
+                }
+          }
     }
 }
 

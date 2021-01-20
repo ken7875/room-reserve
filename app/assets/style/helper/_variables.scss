@@ -155,10 +155,31 @@ $spacers: map-merge(
     11:($spacer * 3.5),
     12:($spacer * 4),
     13:($spacer * 4.5),
+    14: ($spacer * 5),
   ),
   $spacers
 );
 
+// font-size
+$font-size-base: 1rem;
+$font-size:() !default;
+
+$font-size: map-merge(
+    (
+        "xs": ($font-size-base * .5),
+        "sm": ($font-size-base * 0.75),
+        "md": $font-size-base,
+        "lg": ($font-size-base * 1.25),
+        "xl": ($font-size-base * 1.5),
+        "xxl": ($font-size-base * 1.75),
+        "xxxl": ($font-size-base * 2),
+        "4xl": ($font-size-base * 2.25),
+        "5xl": ($font-size-base * 2.5),
+        "6xl": ($font-size-base * 2.75),
+        "7xl": ($font-size-base * 3)
+    ),
+    $font-size
+);
 // This variable affects the `.h-*` and `.w-*` classes.
 $sizes: () !default;
 $sizes: map-merge(
