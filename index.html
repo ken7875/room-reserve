@@ -82,14 +82,19 @@
   <div class="row">
     <div class="search col-10 offset-1 bg-gray py-6 position-relative">
       <div class="search-inner d-flex align-items-center flex-wrap flex-lg-nowrap">
-        <div class="dropdown bg-white  mb-4 mb-lg-0 rounded w-100 mr-4">
-          <a href="#" class="d-flex py-4" id="location" data-toggle="dropdown">
-            <span class="material-icons mx-4 text-dark">
-              location_on
-            </span>
-            <p class="mb-0 text-gray600">Destination</p>
+        <div class="dropdown bg-white mb-4 mb-lg-0 rounded mr-4">
+          <a href="#" id="location" data-toggle="dropdown">
+            <div class="d-flex align-items-center">
+              <span class="material-icons mx-4 text-dark py-4">
+                location_on
+              </span>
+              <div>
+                <p class="mb-0 text-gray600">Destination</p>
+                <input type="text" class="zoneInput d-none mb-0 border-0" readonly value="">
+              </div>
+            </div>
           </a>
-          <ul class="dropdown-menu bg-white w-100" aria-labelledby="location">
+          <ul class="zone dropdown-menu bg-white w-100" aria-labelledby="location">
             <li class="dropdown-item d-flex align-items-start">
               <span class="material-icons mr-2">
                 grade
@@ -147,32 +152,45 @@
             </li>
           </ul>
         </div>
-        <a href="#" class="dropdown mb-4 mb-lg-0 rounded w-100 mr-4">
-          <div class="d-flex bg-white py-4 " id="picker">
-            <span class="material-icons px-4 text-dark">
-              date_range
-            </span>
-            <p class="text-gray600 mb-0">Check-in / Check-out</p>
-          </div>
-        </a>
-        <div class="dropdown guest bg-white mb-4 mb-lg-0 rounded w-100 mr-4">
-          <a href="#" class="d-flex py-4" data-toggle="dropdown">
-            <span class="material-icons text-dark mx-4">
+        <div class="dropdown mr-4 rounded mb-4 mb-lg-0">
+          <a href="#" class="w-100">
+            <div class="bg-white d-flex align-items-center" id="picker">
+              <span class="material-icons pl-4 text-dark py-4">
+                date_range
+              </span>
+              <div class="defaultText ml-4">
+                <p class="text-gray600 mb-0">Check-in / Check-out</p>
+              </div>
+              <div class="userDate d-none">
+                <div class="ml-4">
+                  <p class="mb-0 text-sm bold">Check-in / Check-out</p>
+                  <input type="text" name="datefilter" value="" class="border-0 w-100 text-center text-md mb-0 py-0" readonly />
+                </div>
+                </div>
+            </div>
+          </a>
+        </div>
+        <div class="dropdown guest bg-white mb-4 mb-lg-0 rounded mr-4">
+          <a href="#" data-toggle="dropdown" class="d-flex align-items-center">
+            <span class="material-icons text-dark mx-4 py-4">
               person
             </span>
-            <p class="mb-0 text-gray600">Guest</p>
+            <div>
+              <p class="mb-0 text-gray600">Guest</p>
+                <input class="count d-none text-sm mb-0 border-0" readonly value="">
+            </div>
           </a>
           <ul class="dropdown-menu w-100" id="person_dropdown">
             <li class="d-flex dropdown-item justify-content-between align-items-center">
               <p class="mb-0">Adult</p>
               <div class="d-flex">
-                <button class="minusRoom btn btn-white px-0">
+                <button class="minusPerson changeQty btn btn-white px-0">
                   <span class="material-icons">
                     remove
                   </span>
                 </button>
-                <input type="text" class="roomQuantity form-control border-0 px-2" value="0">
-                <button class="addRoom btn btn-white px-0">
+                <input type="text" class="personQuantity form-control border-0 px-2" value="0">
+                <button class="addPerson changeQty btn btn-white px-0">
                   <span class="material-icons">
                     add
                   </span>
@@ -182,13 +200,13 @@
             <li class="d-flex dropdown-item justify-content-between align-items-center">
               <p class="mb-0">Child</p>
               <div class="d-flex">
-                <button class="minusRoom btn btn-white px-0">
+                <button class="minusPerson changeQty btn btn-white px-0" >
                   <span class="material-icons">
                     remove
                   </span>
                 </button>
-                <input type="text" class="roomQuantity form-control border-0 px-2" value="0">
-                <button class="addRoom btn btn-white px-0">
+                <input type="text" class="personQuantity form-control border-0 px-2" value="0">
+                <button class="addPerson changeQty btn btn-white px-0" >
                   <span class="material-icons">
                     add
                   </span>
@@ -198,13 +216,13 @@
             <li class="d-flex dropdown-item justify-content-between align-items-center">
               <p class="mb-0">Room</p>
               <div class="d-flex">
-                <button class="btn btn-white px-0">
-                  <span class="minusRoom material-icons">
+                <button class="minusPerson changeQty btn btn-white px-0">
+                  <span class="material-icons">
                     remove
                   </span>
                 </button>
-                <input type="text" class="roomQuantity form-control border-0 px-2" value="0">
-                <button class="addRoom btn btn-white px-0">
+                <input type="text" class="personQuantity form-control border-0 px-2" value="1">
+                <button class="addPerson changeQty btn btn-white px-0">
                   <span class="material-icons">
                     add
                   </span>
