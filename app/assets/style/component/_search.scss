@@ -5,7 +5,7 @@
         height: 100%;
         .dropdown{
             display: flex;
-            flex: 1 1 232px;
+            flex: 1 1 auto;
             .dropdown-menu{
                 transform: translate3d(0px, 55px, 0px) !important;
                 z-index: 1000;

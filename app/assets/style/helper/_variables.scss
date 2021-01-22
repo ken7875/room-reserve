@@ -166,8 +166,8 @@ $font-size:() !default;
 
 $font-size: map-merge(
     (
-        "xs": ($font-size-base * .5),
-        "sm": ($font-size-base * 0.75),
+        "xs": ($font-size-base * 0.75),
+        "sm": ($font-size-base * 0.875),
         "md": $font-size-base,
         "lg": ($font-size-base * 1.25),
         "xl": ($font-size-base * 1.5),

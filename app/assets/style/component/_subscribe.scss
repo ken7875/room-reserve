@@ -4,12 +4,6 @@
         position: relative;
         top: 50%;
         transform: translateY(-50%);
-        .title{
-            font-size: 48px;
-            @include mobile(){
-                font-size: 24px;
-            }
-        }
     }
 }
 
