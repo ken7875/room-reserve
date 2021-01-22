@@ -82,7 +82,7 @@
   <div class="row">
     <div class="search col-10 offset-1 bg-gray py-6 position-relative">
       <div class="search-inner d-flex align-items-center flex-wrap flex-lg-nowrap">
-        <div class="dropdown bg-white mb-4 mb-lg-0 rounded mr-4">
+        <div class="dropdown bg-white mb-4 mb-lg-0 rounded mr-4 w-100">
           <a href="#" id="location" data-toggle="dropdown">
             <div class="d-flex align-items-center">
               <span class="material-icons mx-4 text-dark py-4">
@@ -103,7 +103,7 @@
                 <span value="Bangkok">
                   Bangkok
                 </span>
-                <p class="font-sm text-gray600 mb-0">Thailand</p>
+                <p class="text-sm text-gray600 mb-0">Thailand</p>
               </div>
             </li>
             <li class="dropdown-item d-flex align-items-start">
@@ -114,7 +114,7 @@
                 <span value="Osaka">
                   Osaka
                 </span>
-                <p class="font-sm text-gray600 mb-0">Japan</p>
+                <p class="text-sm text-gray600 mb-0">Japan</p>
               </div>
             </li>
             <li class="dropdown-item d-flex align-items-start">
@@ -125,7 +125,7 @@
                 <span value="Roma">
                   Roma
                 </span>
-                <p class="font-sm text-gray600 mb-0">Italy</p>
+                <p class="text-sm text-gray600 mb-0">Italy</p>
               </div>
             </li>
             <li class="dropdown-item d-flex align-items-start">
@@ -136,7 +136,7 @@
                 <span value="Paris">
                   Paris
                 </span>
-                <p class="font-sm text-gray600 mb-0">France</p>
+                <p class="text-sm text-gray600 mb-0">France</p>
               </div>
             </li>
             <li class="dropdown-item d-flex align-items-start">
@@ -147,12 +147,12 @@
                 <span value="Reykjavik">
                   Reykjavik
                 </span>
-                <p class="font-sm text-gray600 mb-0">iceland</p>
+                <p class="text-sm text-gray600 mb-0">iceland</p>
               </div>
             </li>
           </ul>
         </div>
-        <div class="dropdown mr-4 rounded mb-4 mb-lg-0">
+        <div class="dropdown mr-4 rounded mb-4 mb-lg-0 w-100">
           <a href="#" class="w-100">
             <div class="bg-white d-flex align-items-center" id="picker">
               <span class="material-icons pl-4 text-dark py-4">
@@ -170,7 +170,7 @@
             </div>
           </a>
         </div>
-        <div class="dropdown guest bg-white mb-4 mb-lg-0 rounded mr-4">
+        <div class="dropdown guest bg-white mb-4 mb-lg-0 rounded mr-4 w-100">
           <a href="#" data-toggle="dropdown" class="d-flex align-items-center">
             <span class="material-icons text-dark mx-4 py-4">
               person
@@ -240,16 +240,16 @@
   <h3 class="text-md-lg text-lg-xl">Top Choices</h3>
   <ul class="city d-flex mb-7 list-unstyled">
     <li class="px-5 active">
-      <a href="#" class=""><p class="font-xxl pt-5 mb-0">Bali128</p></a>        
+      <a href="#" class="text-primary"><p class="text-xl pt-5 mb-0 d-flex align-items-start bold">Bali<span class="text-sm">128</span></p></a>        
     </li>
     <li class="px-5">
-      <a href="#" class="text-dark"><p class="font-xxl pt-5 mb-0">Okinawa67</p></a>
+      <a href="#" class="text-dark"><p class="text-xl pt-5 mb-0 d-flex align-items-start bold">Okinawa<span class="text-sm">67</span></p></a>
     </li>
     <li class="px-5">
-      <a href="#" class="text-dark"><p class="font-xxl pt-5 mb-0">Taipei53</p></a>
+      <a href="#" class="text-dark"><p class="text-xl pt-5 mb-0 d-flex align-items-start bold">Taipei<span class="text-sm">53</span></p></a>
     </li>      
   </ul>
-  <div class="topChoice ">
+  <div class="topChoice">
     <!-- Additional required wrapper -->
     <div class="swiper-wrapper">
         <!-- Slides -->
@@ -259,9 +259,11 @@
               <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week8/top1.jpg?raw=true" class="card-img-top" alt="top-choice 1">
               <div class="card-body px-0 py-2 py-2">
                 <p class="title mb-2 mt-2">Hotel Aqua</p>
-                <div class="star five"></div>
-                <span class="text-gray600 font-md">5.0</span><span class="text-gray600 font-sm">・2k reviews</span>
-                <p><span class="mr-2 text-gray600 font-md">TWD 2,480</span><del class="text-gray600 font-sm">TWD 3,980</del></p>
+                <div class="d-flex align-items-center">
+                  <div class="star five d-inline-block mr-2"></div>
+                  <span class="text-gray600 text-sm mb-1">5.0</span><span class="text-gray600 text-xs mb-1">・2k reviews</span>
+                </div>
+                <p><span class="mr-2 text-gray600 text-sm">TWD 2,480</span><del class="text-gray600 text-xs">TWD 3,980</del></p>
               </div>
           </a>
           </div>
@@ -272,9 +274,11 @@
               <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week8/top2.jpg?raw=true" class="card-img-top" alt="top-choice 2">
               <div class="card-body px-0 py-2">
                 <p class="title mt-2 mb-2">Mr. Kawasaki Inn</p>
-                <div class="star four"></div>
-                <span class="text-gray600 font-md">4.0</span><span class="text-gray600 font-sm">・500 reviews</span>
-                <p><span class="text-gray600 font-md">TWD 3,380</span></p>
+                <div class="d-flex align-items-center">
+                  <div class="star four d-inline-block mr-2"></div>
+                  <span class="text-gray600 text-sm mb-1">4.0</span><span class="text-gray600 text-xs mb-1">・500 reviews</span>
+                </div>
+                <p><span class="text-gray600 text-sm">TWD 3,380</span></p>
               </div>
             </div>
           </a>
@@ -285,9 +289,11 @@
               <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week8/top3.jpg?raw=true" class="card-img-top" alt="top-choice 3">
               <div class="card-body px-0 py-2">
                 <p class="title mt-2 mb-2">Weekly Paradise</p>
-                <div class="star four"></div>
-                <span class="text-gray600 font-md">4.0</span><span class="text-gray600 font-sm">・470 reviews</span>
-                <p><span class="text-gray600 font-md">TWD 4,780</span></p>
+                <div class="d-flex align-items-center">
+                <div class="star four d-inline-block mr-2"></div>
+                  <span class="text-gray600 text-sm mb-1">4.0</span><span class="text-gray600 text-xs mb-1">・470 reviews</span>
+                </div>
+                <p><span class="text-gray600 text-sm">TWD 4,780</span></p>
               </div>
             </div>
           </a>
@@ -298,9 +304,11 @@
               <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week8/top4.jpg?raw=true" class="card-img-top" alt="top-choice 4">
               <div class="card-body px-0 py-2">
                 <p class="title mt-2 mb-2">Beast Hotel</p>
-                <div class="star four"></div>
-                <span class="text-gray600 font-md">4.0</span><span class="text-gray600 font-sm">・283 reviews</span>
-                <p><span class="text-gray600 font-md">TWD 1,980</span></p>
+                <div class="d-flex align-items-center">
+                  <div class="star four d-inline-block mr-2"></div>
+                  <span class="text-gray600 text-sm mb-1">4.0</span><span class="text-gray600 text-xs mb-1">・283 reviews</span>
+                </div>
+                <p><span class="text-gray600 text-sm">TWD 1,980</span></p>
               </div>
             </div>
           </a>
@@ -325,11 +333,11 @@
 
 <div class="container mb-13">
   <div class="popularDestination row">
-    <h3 class="col-12">Top Choices</h3>
+    <h3 class="col-12">Popular Destinations</h3>
     <div class="col-lg-4 col-md-6 mb-6">
       <button class="Osaka btn w-100">
-        <p class="font-sm mb-0 text-white text-left">JAPAN</p>
-        <p class="text-white text-left font-xxl">
+        <p class="text-xs mb-0 text-white text-left">JAPAN</p>
+        <p class="text-white text-left text-xl">
           Osaka
           <span class="material-icons">
             keyboard_arrow_down
@@ -339,8 +347,8 @@
     </div>
     <div class="col-lg-4 col-md-6 mb-6">
       <button class="Koyto btn w-100">
-        <p class="font-sm mb-0 text-white text-align-start text-left">JAPAN</p>
-        <p class="text-white text-left font-xxl">
+        <p class="text-xs mb-0 text-white text-align-start text-left">JAPAN</p>
+        <p class="text-white text-left text-xl">
           Kyoto
           <span class="material-icons">
             keyboard_arrow_down
@@ -350,8 +358,8 @@
     </div>
     <div class="col-lg-4 col-md-6 mb-6">
       <button class="Reykjavik btn w-100">
-        <p class="font-sm mb-0 text-white text-align-start text-left">iceland</p>
-        <p class="text-white text-left font-xxl">
+        <p class="text-xs mb-0 text-white text-align-start text-left">iceland</p>
+        <p class="text-white text-left text-xl">
           Reykjavík
           <span class="material-icons">
             keyboard_arrow_down
@@ -361,8 +369,8 @@
     </div>
     <div class="col-lg-4 col-md-6 mb-6">
       <button class="Paris btn w-100">
-        <p class="font-sm mb-0 text-white text-align-start text-left">France</p>
-        <p class="text-white text-left font-xxl">
+        <p class="text-xs mb-0 text-white text-align-start text-left">France</p>
+        <p class="text-white text-left text-xl">
           Paris
           <span class="material-icons">
             keyboard_arrow_down
@@ -372,8 +380,8 @@
     </div>
     <div class="col-lg-4 col-md-6 mb-6 mb-md-0">
       <button class="Roma btn w-100">
-        <p class="font-sm mb-0 text-white text-align-start text-left">Italy</p>
-        <p class="text-white text-left font-xxl">
+        <p class="text-xs mb-0 text-white text-align-start text-left">Italy</p>
+        <p class="text-white text-left text-xl">
           Roma
           <span class="material-icons">
             keyboard_arrow_down
@@ -383,8 +391,8 @@
     </div>
     <div class="col-lg-4 col-md-6">
       <button class="Bangkok btn w-100" onclick='location.href = "bangkok.html"'>
-        <p class="font-sm mb-0 text-white text-align-start text-left">Thailand</p>
-        <p class="text-white text-left font-xxl">
+        <p class="text-xs mb-0 text-white text-align-start text-left">Thailand</p>
+        <p class="text-white text-left text-xl">
           Bangkok
           <span class="material-icons">
             keyboard_arrow_down
@@ -429,7 +437,7 @@
     <div class="subscribe-lg w-100 bg-gray">
     <div class="container h-100">
       <div class="content row">
-        <label class="title col-md-12 text-center mb-5">Subscribe for Exclusive Offer</label>
+        <label class="title text-md-7xl text-xl bold col-md-12 text-center mb-5">Subscribe for Exclusive Offer</label>
         <div class="input-group col-md-6 offset-md-3">
             <input type="text" class="form-control py-7 px-5" placeholder="Your email address" aria-label="Your email address" aria-describedby="button-addon2">
             <div class="input-group-append">
@@ -447,8 +455,8 @@
     <footer class="footer py-6">
     <div class="container d-flex align-items-center justify-content-md-between justify-content-center">
       <div class="d-flex flex-md-row flex-column-reverse align-items-center">
-        <h5 class="text-center text-gray600 font-md mb-0">© 2020 ALOHA, Inc. All rights reserved.</h5>
-        <ul class="d-flex text-gray600 font-md mb-4 mb-md-0 list-unstyled ml-12">
+        <h5 class="text-center text-gray600 text-sm mb-0">© 2020 ALOHA, Inc. All rights reserved.</h5>
+        <ul class="d-flex text-gray600 text-sm mb-4 mb-md-0 list-unstyled ml-12">
           <li class="mr-6"><a href="#">FAQs</a></li>
           <li class="mr-6"><a href="#">Terms of use</a></li>
           <li><a href="#">Privacy policy</a></li>
@@ -457,10 +465,10 @@
       <ul class="d-lg-flex d-none mb-0 list-unstyled">
         <li class="mr-6 dropdown">
           <a href="#" class="d-flex align-items-center" id="languageDropdown" data-toggle="dropdown">
-            <span class="material-icons text-dark">
+            <span class="material-icons text-dark mr-1">
               language
             </span>
-            <span class="text-gray600 font-md text-dark">English</span>
+            <span class="text-gray600 text-sm text-dark">English</span>
             <span class="material-icons text-dark">
               arrow_drop_down
             </span>
@@ -475,7 +483,7 @@
             <span class="material-icons text-dark">
               attach_money
             </span>
-            <span class="text-gray600 font-md text-dark">TWD</span>
+            <span class="text-gray600 text-sm text-dark">TWD</span>
             <span class="material-icons text-dark">
               arrow_drop_down
             </span>

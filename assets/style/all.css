@@ -10629,10 +10629,10 @@ li {
   height: 24px; }
 
 .text-xs {
-  font-size: 0.5rem; }
+  font-size: 0.75rem; }
 
 .text-sm {
-  font-size: 0.75rem; }
+  font-size: 0.875rem; }
 
 .text-md {
   font-size: 1rem; }
@@ -10663,11 +10663,11 @@ li {
 
 @media (min-width: 576px) {
   .text-sm-xs {
-    font-size: 0.5rem; } }
+    font-size: 0.75rem; } }
 
 @media (min-width: 576px) {
   .text-sm-sm {
-    font-size: 0.75rem; } }
+    font-size: 0.875rem; } }
 
 @media (min-width: 576px) {
   .text-sm-md {
@@ -10707,11 +10707,11 @@ li {
 
 @media (min-width: 768px) {
   .text-md-xs {
-    font-size: 0.5rem; } }
+    font-size: 0.75rem; } }
 
 @media (min-width: 768px) {
   .text-md-sm {
-    font-size: 0.75rem; } }
+    font-size: 0.875rem; } }
 
 @media (min-width: 768px) {
   .text-md-md {
@@ -10751,11 +10751,11 @@ li {
 
 @media (min-width: 992px) {
   .text-lg-xs {
-    font-size: 0.5rem; } }
+    font-size: 0.75rem; } }
 
 @media (min-width: 992px) {
   .text-lg-sm {
-    font-size: 0.75rem; } }
+    font-size: 0.875rem; } }
 
 @media (min-width: 992px) {
   .text-lg-md {
@@ -10795,11 +10795,11 @@ li {
 
 @media (min-width: 1200px) {
   .text-xl-xs {
-    font-size: 0.5rem; } }
+    font-size: 0.75rem; } }
 
 @media (min-width: 1200px) {
   .text-xl-sm {
-    font-size: 0.75rem; } }
+    font-size: 0.875rem; } }
 
 @media (min-width: 1200px) {
   .text-xl-md {
@@ -10894,11 +10894,6 @@ h3 {
     -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
             transform: translateY(-50%); }
-    .subscribe-lg .content .title {
-      font-size: 48px; }
-      @media (max-width: 768px) {
-        .subscribe-lg .content .title {
-          font-size: 24px; } }
 
 .subscribe-sm .title {
   font-size: 32px; }
@@ -10987,8 +10982,8 @@ h3 {
       display: -ms-flexbox;
       display: flex;
       -webkit-box-flex: 1;
-          -ms-flex: 1 1 232px;
-              flex: 1 1 232px; }
+          -ms-flex: 1 1 auto;
+              flex: 1 1 auto; }
       .search .search-inner .dropdown .dropdown-menu {
         -webkit-transform: translate3d(0px, 55px, 0px) !important;
                 transform: translate3d(0px, 55px, 0px) !important;
